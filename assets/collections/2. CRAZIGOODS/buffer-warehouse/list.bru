@@ -1,0 +1,21 @@
+meta {
+  name: list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{crg_host}}/buffer-requests/111
+  body: none
+  auth: bearer
+}
+
+params:query {
+  ~search: null
+  ~from: null
+  ~to: null
+}
+
+auth:bearer {
+  token: {{token}}
+}
