@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { openCollection, importCollection } from 'providers/ReduxStore/slices/collections/actions';
 import { IconBrandGithub, IconPlus, IconDownload, IconFolders, IconSpeakerphone, IconBook } from '@tabler/icons';
 
-import Bruno from 'components/Bruno';
+import CraziGoodsLogo from 'assets/crazigoods-3.png';
 import CreateCollection from 'components/Sidebar/CreateCollection';
 import ImportCollection from 'components/Sidebar/ImportCollection';
 import ImportCollectionLocation from 'components/Sidebar/ImportCollectionLocation';
@@ -58,9 +58,9 @@ const Welcome = () => {
       ) : null}
 
       <div aria-hidden className="">
-        <Bruno width={50} />
+        <img src={CraziGoodsLogo} alt="CraziGoods Logo" className="w-44" />
       </div>
-      <div className="text-xl font-semibold select-none">bruno</div>
+      <div className="text-xl font-semibold select-none">CraziGoods Teams - by Bruno</div>
       <div className="mt-4">{t('WELCOME.ABOUT_BRUNO')}</div>
 
       <div className="uppercase font-semibold heading mt-10">{t('COMMON.COLLECTIONS')}</div>

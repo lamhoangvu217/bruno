@@ -48,6 +48,7 @@ import { sendCollectionOauth2Request as _sendCollectionOauth2Request } from 'uti
 import { getGlobalEnvironmentVariables, findCollectionByPathname, findEnvironmentInCollectionByName, getReorderedItemsInTargetDirectory, resetSequencesInFolder, getReorderedItemsInSourceDirectory, calculateDraggedItemNewPathname } from 'utils/collections/index';
 import { sanitizeName } from 'utils/common/regex';
 import { safeParseJSON, safeStringifyJSON } from 'utils/common/index';
+import { commitFileToGit } from 'utils/git';
 
 export const renameCollection = (newName, collectionUid) => (dispatch, getState) => {
   const state = getState();
@@ -83,6 +84,15 @@ export const saveRequest = (itemUid, collectionUid, saveSilently) => (dispatch, 
     itemSchema
       .validate(itemToSave)
       .then(() => ipcRenderer.invoke('renderer:save-request', item.pathname, itemToSave))
+      .then(() => {
+        // Auto-commit to git after saving
+        return commitFileToGit(item.pathname)
+          .catch(err => {
+            console.error('Git commit error:', err);
+            // Don't fail the save operation if git commit fails
+            return Promise.resolve();
+          });
+      })
       .then(() => {
         if (!saveSilently) {
           toast.success('Request saved successfully');

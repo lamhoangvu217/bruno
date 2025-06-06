@@ -73,6 +73,7 @@
     "react-tooltip": "^5.5.2",
     "sass": "^1.46.0",
     "semver": "^7.7.1",
+    "simple-git": "^3.28.0",
     "strip-json-comments": "^5.0.1",
     "styled-components": "^5.3.3",
     "system": "^2.0.1",

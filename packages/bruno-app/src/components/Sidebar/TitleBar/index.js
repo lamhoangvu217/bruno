@@ -13,7 +13,7 @@ import { openCollection, importCollection } from 'providers/ReduxStore/slices/co
 import StyledWrapper from './StyledWrapper';
 import { multiLineMsg } from "utils/common";
 import { formatIpcError } from "utils/common/error";
-
+import CraziGoodsLogo from 'assets/crazigoods-3.png';
 const TitleBar = () => {
   const [importedCollection, setImportedCollection] = useState(null);
   const [createCollectionModalOpen, setCreateCollectionModalOpen] = useState(false);
@@ -79,10 +79,7 @@ const TitleBar = () => {
 
       <div className="flex items-center">
         <button className="flex items-center gap-2 text-sm font-medium" onClick={handleTitleClick}>
-          <span aria-hidden>
-            <Bruno width={30} />
-          </span>
-          bruno
+        <img src={CraziGoodsLogo} alt="CraziGoods Logo" className="w-32" />
         </button>
         <div className="collection-dropdown flex flex-grow items-center justify-end">
           <Dropdown onCreate={onMenuDropdownCreate} icon={<MenuIcon />} placement="bottom-start">
