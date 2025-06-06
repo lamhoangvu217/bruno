@@ -1,0 +1,21 @@
+meta {
+  name: update factory
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{crg_host}}/factories/eo1rgPTD9Aax
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "factoryName": "CRG22"
+  }
+}

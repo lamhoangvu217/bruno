@@ -1,0 +1,19 @@
+meta {
+  name: list order gbh
+  type: http
+  seq: 50
+}
+
+get {
+  url: {{host}}/orders/list-order-gbh?from=2024-07-01T00:00:00Z
+  body: none
+  auth: bearer
+}
+
+params:query {
+  from: 2024-07-01T00:00:00Z
+}
+
+auth:bearer {
+  token: 425fd35ecdea3498ad8316dd065add266e031aa59bf7e2cf2a3c2565630455f9
+}

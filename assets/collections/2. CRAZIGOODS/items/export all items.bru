@@ -1,0 +1,19 @@
+meta {
+  name: export all items
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{host}}/items/export?itemStatus=in_production
+  body: none
+  auth: bearer
+}
+
+params:query {
+  itemStatus: in_production
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjgyOTk2NTAyLCJpYXQiOjE2ODI5MTAxMDJ9.-JpSGuSwn1fS5ia9oo4d7-MDZMvg-wyNVmxZqs2mMlc
+}

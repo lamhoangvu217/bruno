@@ -1,0 +1,22 @@
+meta {
+  name: update
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{host}}/line-ship-trackings/KqE8MLxUu4TMGCn4HvC
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE3MDk5MDM5NzAsImlhdCI6MTcwOTgxNzU3MH0.weFjXfdYVGygIhPiXu1Lq2nvaYSJwr2p4JoxNyNN6WE
+}
+
+body:json {
+  {
+      "trackingNumber" : "9235990343134828562433",
+      "trackingUrl" : "https://tools.usps.com/go/TrackConfirmAction?tRef=fullpage&tLabels=9235990343134828562433"
+  }
+}

@@ -1,0 +1,22 @@
+meta {
+  name: create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/product-shipment-products
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImU1MzUzbjQzVUxBQSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc5NzA1MDU2LCJpYXQiOjE2Nzk2MTg2NTZ9.a76oqUKl3EqK9pXSk3UjTPy7J9yImARRI7k8M1RGn0Q
+}
+
+body:json {
+  {
+      "productId" : "3mHP8w3u35tRZa",
+      "shipmentProductId":"e5CYUvTS71D2"
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{crg_host}}/movement-types/eo25qnpJ9P6A
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "code": "301-WH"
+  }
+}

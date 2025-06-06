@@ -1,0 +1,15 @@
+meta {
+  name: sync roles
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/roles/sync-sql
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjYzYjc2YzJlMDA2ZDY4YjEyMjU5YmJjZSIsImVtYWlsIjoiZGF0bnQ0QGdvZGdyb3VwLmNvIiwicm9sZSI6IkFETUlOIn0sImV4cCI6MTY3MzA1MTY4NiwiaWF0IjoxNjcyOTY1Mjg2fQ.R-4TH_i9NHFsG9Kt3FF6hTYraH6kZeDNmPf-25jclcs
+}

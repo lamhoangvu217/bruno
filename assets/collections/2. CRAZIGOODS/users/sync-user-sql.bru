@@ -1,0 +1,15 @@
+meta {
+  name: sync-user-sql
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{host}}/users/sync-sql
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzAxMzgwOTUsImlhdCI6MTY3MDA1MTY5NSwidXNlcklEIjoiNjM4OTRmYjJlYWNkNTIwYzJmNDA4NTk0IiwiZW1haWwiOiJkYXRudEBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiJ9.V3TfAeSN_j-ctWfF0wEXAESExEtR2K9rrloQuvYo9yE
+}

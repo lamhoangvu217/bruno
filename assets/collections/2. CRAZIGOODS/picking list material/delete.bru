@@ -1,0 +1,15 @@
+meta {
+  name: delete
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{host}}/picking-list-materials/LvSmpmANXXgW2m84aLW
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Generate API Key
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{host}}/users/generate-api-key
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjgxMzU0NDEsImlhdCI6MTY2ODA0OTA0MSwidXNlcklEIjoiNjM2YzY4NzkwYzM0Mzg4OTk5N2MxNmVlIiwiZW1haWwiOiJjb250YWN0QGdvZGdyb3VwLmNvIiwicm9sZSI6IlVTRVIifQ.e80XsJhVT7SjD2elMdYmiq-nEIOzMplF-PHlE-cSxeM
+}

@@ -1,0 +1,21 @@
+meta {
+  name: save box scan out items
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/box-scanout-items
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "itemIds": ["xxx", "yyy"]
+  }
+}

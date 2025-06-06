@@ -1,0 +1,19 @@
+meta {
+  name: color material Thread
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{host}}/variant-inventories/color-by-product-default?
+  body: none
+  auth: bearer
+}
+
+params:query {
+  : null
+}
+
+auth:bearer {
+  token: {{token}}
+}

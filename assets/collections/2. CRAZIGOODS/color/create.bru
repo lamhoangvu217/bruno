@@ -1,0 +1,22 @@
+meta {
+  name: create
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/colors
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "name": "Blue",
+      "code": "B"
+  }
+}

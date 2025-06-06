@@ -1,0 +1,15 @@
+meta {
+  name: update production order failed
+  type: http
+  seq: 20
+}
+
+post {
+  url: {{host}}/production-orders/update-production-order-failed
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

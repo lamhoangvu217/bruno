@@ -1,0 +1,135 @@
+meta {
+  name: create model template
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{crg_host}}/model-templates
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  // body create linking BOM
+  {
+      // "name": "TS01-Linking-HONG-TEST009",
+      "description": "Test create linking T-shirt - BOM9",
+      "level": 2,
+      "modelTemplateId": "DCntATxkNDajPdS",
+      // "finishedCode": "EhCRXGi9H4ixrZ8",
+      // "type": "knitting",
+      // "typeOrder": "normal",
+      // "modelType": "normal",
+      // "style": "flower",
+      "operationId": "gHpok7mLcasQ",
+      "productId": "vrHryQ9PVUdJwGLA",
+      "operationPart":"",
+      "knittingTypeId":"",
+      "variantInventoryIds": [
+          {
+              "variantInventoryId": "EhCRXGi9H4ixrZ8",
+              "quantity": 1,
+              "unit": "PCS",
+              "typeQuantity":""
+          },
+          {
+              "variantInventoryId": "vqYpqaTyBPubhkWv",
+              "quantity": 1,
+              "unit": "PCS",
+              "isQc": true
+          }
+      ]
+  }
+}
+
+tests {
+  
+  // body create parent BOM
+  {
+      "name": "TS01-Pa-HONG-TEST001", 
+      "description": "Test create parent T-shirt - BOM1",
+      "level": 1,
+      "finishCode": "e5CjWpDq2zFU",
+      "type": "knitting",
+      "typeOrder": "normal",
+      "modelType": "normal",
+      "style": "flower"
+  }
+  
+  // body create linking BOM
+  {
+      "name": "TS01-Linking-HONG-TEST002", 
+      "description": "Test create linking T-shirt - BOM2",
+      "level": 2,
+      "modelKnittingId": "eo1tuN5kmjzL",
+      "finishCode": "e5CjWpDq2zFU",
+      "type": "knitting",
+      "typeOrder": "normal",
+      "modelType": "normal",
+      "style": "flower"
+  }
+  
+  // body create knitting BOM
+  {
+      "name": "TS01-KN-HONG-TEST003",
+      "description": "Test create knitting T-shirt - BOM3",
+      "level": 1,
+      "type": "knitting",
+      "typeOrder": "normal",
+      "modelType": "normal",
+      "modelKnittingId": "gHpom8KHe9FW",
+      "modelChilds": [
+          {
+              "name": "TS01-LK-HONG-TEST003.1",
+              "description": "Test create knitting T-shirt - BOM3.1",
+              "finishCode": "e5CjWpDq2zFU",
+              "sideType": "1 side right",
+              "style": "pink-flower",
+              "variantInventoryIds": [
+                  {
+                      "variantInventoryId": "EhCRXGi9H4ixrZ8",
+                      "quantity": 1,
+                      "unit": "PCS"
+                  },
+                  {
+                      "variantInventoryId": "vqYpqaTyBPubhkWv",
+                      "quantity": 1,
+                      "unit": "PCS",
+                      "isQc": true
+                  }
+              ]
+          },
+          {
+              "name": "TS01-LK-HONG-TEST003.2",
+              "description": "Test create knitting T-shirt - BOM3.2",
+              "finishCode": "e5CjWpDq2zFU",
+              "sideType": "1 side left",
+              "style": "black-flower",
+              "variantInventoryIds": [
+                  {
+                      "variantInventoryId": "EhCRXGi9H4ixrZ8",
+                      "quantity": 1,
+                      "unit": "PCS"
+                  },
+                  {
+                      "variantInventoryId": "vqYpqaTyBPubhkWv",
+                      "quantity": 1,
+                      "unit": "PCS",
+                      "isQc": true
+                  }
+              ]
+          }
+      ]
+  }
+}
+
+docs {
+  Note:
+  
+  ** requirements: Name, Description
+}

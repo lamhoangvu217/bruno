@@ -1,0 +1,25 @@
+meta {
+  name: update many status order
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{host}}/orders/update-many-orders-status
+  body: multipartForm
+  auth: bearer
+}
+
+params:query {
+  ~pending: awaiting_fulfillment
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg4MjQ0OTMsImlhdCI6MTY2ODczODA5MywidXNlcklEIjoiNjM2MTNmZDkyMTMzYTlhMmQzM2M2MTU2IiwiZW1haWwiOiJkYXRudEBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiJ9.yDfTAQtbG3Zl2ptVl6ZIM1AXySl-H7vGl6OzDH42q-w
+}
+
+body:multipart-form {
+  file: @file()
+  config: [{"before" : "in_production" , "after": "awaiting_delivery_scan"}]
+  orderIds: ["6374afd0fd87ea6770779410", "6374b07f12b1c10b9f037c3f"]
+}

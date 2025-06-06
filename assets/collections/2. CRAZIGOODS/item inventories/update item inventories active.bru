@@ -1,0 +1,15 @@
+meta {
+  name: update item inventories active
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{host}}/item-inventories/active/LvwrT8RaWM2B29QU1di
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

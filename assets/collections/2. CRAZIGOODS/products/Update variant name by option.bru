@@ -1,0 +1,19 @@
+meta {
+  name: Update variant name by option
+  type: http
+  seq: 15
+}
+
+post {
+  url: {{host}}/variants/update-variant-name-by-option/:id
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: ESUfvYysh3aL4x8
+}
+
+auth:bearer {
+  token: {{token}}
+}

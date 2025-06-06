@@ -1,0 +1,24 @@
+meta {
+  name: save
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/variant-inventory-models/z8FHRPsaj1ge7vcp
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTU3NDcxMzUsImlhdCI6MTY5NTY2MDczNX0.FbH_vaDYWVuQbRqAs_nld48ja5yZpchIN8rNpYGiVNA
+}
+
+body:json {
+  {
+      "variantInventoryId": "vsXzqsMZpJG3SKC6",
+      "isQC": false,
+      "unit" : "m",
+      "quantity": 0.4
+  }
+}

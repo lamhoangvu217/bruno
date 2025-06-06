@@ -1,0 +1,20 @@
+meta {
+  name: list
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/delivery-notes?search=xxx&supplierMaterialId=xxx1
+  body: none
+  auth: bearer
+}
+
+params:query {
+  search: xxx
+  supplierMaterialId: xxx1
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,21 @@
+meta {
+  name: upload many main file embroidery
+  type: http
+  seq: 15
+}
+
+post {
+  url: {{host}}/items/3mKb6WGzNJtvNQ/update-many-main-file-embroidery
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjg0NzIyNDMzLCJpYXQiOjE2ODQ2MzYwMzN9.x79GVqqwNxc3OFGxSY6gTjsMssImKpbz-7cLQz3iRoU
+}
+
+body:json {
+  {
+      "mainFileEmbroidery": "https://api.podlovers.com/print-files/a47057aa-b5c0-463d-b03d-d6c07cdfaea0/production"
+  }
+}

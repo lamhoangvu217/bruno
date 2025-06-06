@@ -1,0 +1,15 @@
+meta {
+  name: statistic order fulfillment
+  type: http
+  seq: 34
+}
+
+get {
+  url: {{host}}/orders/fulfillment/statistic
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

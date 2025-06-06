@@ -1,0 +1,23 @@
+meta {
+  name: list invoices
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/order-wallet-transactions
+  body: none
+  auth: bearer
+}
+
+params:query {
+  ~search: wbMCo1EQY
+  ~cursor: e5CWJSTvSskz
+  ~send_email: false
+  ~from: 2023-02-26T17:00:00Z
+  ~to: 2023-02-26T18:00:00Z
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoieG9uZ3hhbzE3MTFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwidGllcklkIjoiIn0sImV4cCI6MTY3NzgyODExMCwiaWF0IjoxNjc3NzQxNzEwfQ.Ncp4FlR9Ubgomhlneuidz909AQ7_vZ9JV9eNTWzn__4
+}

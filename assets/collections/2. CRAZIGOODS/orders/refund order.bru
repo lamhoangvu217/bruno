@@ -1,0 +1,27 @@
+meta {
+  name: refund order
+  type: http
+  seq: 29
+}
+
+post {
+  url: {{host}}/orders/LCDYUpu5jVUbHfUCAHe/refund
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTE4ODgwMTIsImlhdCI6MTY5MTgwMTYxMn0.T41fNVQ6QC-QNtyezItDXjRgWR7HJj1M7bqi9YnjCT4
+}
+
+body:json {
+  {
+      "refund": [
+          {
+              "itemId": "LZhqBeKyZ36LBQAeeFY",
+              "shippingCost": 9.61,
+              "baseCost": 7.01
+          }
+      ]
+  }
+}

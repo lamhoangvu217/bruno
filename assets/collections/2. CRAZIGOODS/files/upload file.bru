@@ -1,0 +1,19 @@
+meta {
+  name: upload file
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/files
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImU1MzUzbjQzVUxBQSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc5NDU2MTg2LCJpYXQiOjE2NzkzNjk3ODZ9.SWOK30FtOQ1Z4s9F-6ZDMjLlPdiHopoKZ0dWE6m5M6s
+}
+
+body:multipart-form {
+  file: @file(/Users/tadalu/Desktop/TÀI LIỆU LUYỆN NGHE NĂM 2022.zip)
+}

@@ -1,0 +1,30 @@
+meta {
+  name: list orders
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{host}}/orders?orderIds=63881f27951773b59c3474cd, 63881f38951773b59c3474cf
+  body: none
+  auth: bearer
+}
+
+params:query {
+  orderIds: 63881f27951773b59c3474cd, 63881f38951773b59c3474cf
+  ~search: 03
+  ~limit: 20000
+  ~page: 1
+  ~tracked: tracked
+  ~from: 2022-11-08T00:00:00Z
+  ~to: 2022-11-08T23:59:59Z
+  ~productName: Test1
+  ~orderStatus: pending
+  ~paymentStatus: paid
+  ~status: 1
+  ~all: true
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njk5NTAwMjIsImlhdCI6MTY2OTg2MzYyMiwidXNlcklEIjoiNjM4ODE4N2YxMWMyNzVlZGM2MjhkYzUxIiwiZW1haWwiOiJkYXRudDEwQGdvZGdyb3VwLmNvIiwicm9sZSI6IkFETUlOIn0.5HCLTXVcorUeLiK3daXppXpxayJpiIoPrYfqFkd0Pdc
+}

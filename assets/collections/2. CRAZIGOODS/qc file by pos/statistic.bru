@@ -1,0 +1,15 @@
+meta {
+  name: statistic
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{host}}/qc-file-by-pos/statistic
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

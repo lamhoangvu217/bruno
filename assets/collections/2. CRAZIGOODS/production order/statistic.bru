@@ -1,0 +1,21 @@
+meta {
+  name: statistic
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{host}}/production-orders/statistic?from=2023-03-23T17:01:36Z&to=2023-03-27T17:01:36Z&search=
+  body: none
+  auth: bearer
+}
+
+params:query {
+  from: 2023-03-23T17:01:36Z
+  to: 2023-03-27T17:01:36Z
+  search: 
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImU1MzUzbjQzVUxBQSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc5OTcxODEyLCJpYXQiOjE2Nzk4ODU0MTJ9.kMe2UNWneUwCXsqm4cOEMYv8Z_Ri1WhAO8TZ7qB9WB0
+}

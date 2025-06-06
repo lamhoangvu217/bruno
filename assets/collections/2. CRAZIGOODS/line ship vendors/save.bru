@@ -1,0 +1,22 @@
+meta {
+  name: save
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/line-ship-vendors
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE3MDg1NzIzOTAsImlhdCI6MTcwODQ4NTk5MH0.EyA1iXl15VjAIFl3tTl__4ArEkUjAPGN8X_dsxvGBso
+}
+
+body:json {
+  {
+      "name" : "Pitney Bowes",
+      "type" : "buy_shipping_label"
+  }
+}

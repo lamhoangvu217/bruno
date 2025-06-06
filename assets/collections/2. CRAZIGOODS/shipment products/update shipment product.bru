@@ -1,0 +1,21 @@
+meta {
+  name: update shipment product
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{host}}/shipment-products/DCr3FzTNWVAfhXC
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTM0OTMxMjQsImlhdCI6MTY5MzQwNjcyNH0.d7sir4870afkHyHYZJPVayd9zP2zgzhFkDQpRgL-z58
+}
+
+body:json {
+  {
+     "variationType": "option12"
+  }
+}

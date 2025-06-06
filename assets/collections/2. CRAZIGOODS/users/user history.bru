@@ -1,0 +1,21 @@
+meta {
+  name: user history
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{host}}/user_histories/3srLErYxdoMerk?page=1
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  ~limit: 1
+  ~cursor: e5CWLwDGYuWC
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNzckxFcll4ZG9NZXJrIiwiZW1haWwiOiJ0ZXN0QGdvZGdyb3VwLmNvIiwicm9sZSI6IlVTRVIiLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc4NDk5ODQ0LCJpYXQiOjE2Nzg0MTM0NDR9.r3RbS4-18syw9NxedwRONxRvpkjfJi9NTN9R5eFnMaU
+}

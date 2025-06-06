@@ -1,0 +1,25 @@
+meta {
+  name: update
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{host}}/supplier-material/:id
+  body: json
+  auth: bearer
+}
+
+params:path {
+  id: as1232adq
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjg3MzI5MzEzLCJpYXQiOjE2ODcyNDI5MTN9.NLw05Np-GWX3mZaa-cS1ieIWXxi0tojBHLmbdIt4eh8
+}
+
+body:json {
+  {
+      "name": "Inflow"
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: received
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{host}}/dummies/received/:id
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: 
+}
+
+auth:bearer {
+  token: {{token}}
+}

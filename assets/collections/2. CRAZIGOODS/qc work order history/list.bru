@@ -1,0 +1,22 @@
+meta {
+  name: list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/qc-work-order-history?from&to&search=Q0WiBZTfZ-1-1-1&status=
+  body: none
+  auth: bearer
+}
+
+params:query {
+  from: null
+  to: null
+  search: Q0WiBZTfZ-1-1-1
+  status: 
+}
+
+auth:bearer {
+  token: {{token}}
+}

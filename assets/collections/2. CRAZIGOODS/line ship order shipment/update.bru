@@ -1,0 +1,21 @@
+meta {
+  name: update
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{host}}/line-ship-order-shipment/update/LBy2nkcTk3ZpfrhzFQ2
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "hawb": "GOD9235990343134828562426"
+  }
+}

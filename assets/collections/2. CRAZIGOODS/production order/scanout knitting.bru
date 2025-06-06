@@ -1,0 +1,22 @@
+meta {
+  name: scanout knitting
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{host}}/production-orders/scan-out-knitting
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "workOrderIds": ["IPHp8CXQI-359-1-1"],
+      "poName": "0-659"
+  }
+}

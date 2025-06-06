@@ -1,0 +1,25 @@
+meta {
+  name: statistic
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{crg_host}}/feedbacks/statistic?limit&page&cursor&form&to&search&isMyFeedback=true
+  body: none
+  auth: bearer
+}
+
+params:query {
+  limit: null
+  page: null
+  cursor: null
+  form: null
+  to: null
+  search: null
+  isMyFeedback: true
+}
+
+auth:bearer {
+  token: {{token}}
+}

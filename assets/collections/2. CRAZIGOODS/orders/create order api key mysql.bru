@@ -1,0 +1,53 @@
+meta {
+  name: create order api key mysql
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8082/orders-knitting
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "customerNote": "",
+      "lineItems": [
+          {
+              "artworkBack": "https://m.media-amazon.com/images/I/81Jf0pj6GuL._AC_SL1500_.jpg",
+              "artworkFront": "https://m.media-amazon.com/images/I/81Jf0pj6GuL._AC_SL1500_.jpg",
+              "itemSku": "AO-WHITE-S",
+              "asin": "8210194661604",
+              "unfulfillQuantity": 1,
+              "urlMockup": "https://m.media-amazon.com/images/I/81Jf0pj6GuL._AC_SL1500_.jpg",
+              "variantNote": "",
+              "variantTitle": "",
+              "productId": "AO-KNITTING",
+              "customize": "[{\"Name\":\"styleCode\",\"Value\":\"WA90_0001\"},{\"Name":"knittingColor\",\"Value":\"Black/White\"}]",
+              "isCustomize": true,
+              "styleCode":"WA90_0001",
+              "knittingColor":"Black/White"
+          }
+      ],
+      "orderId": "dat-cai-ao-len-cho-doi-them-xanh-76",
+      "shippingAddress1": "1ed742 W Azalea St",
+      "shippingCity": "Greenville",
+      "shippingCountry": "US",
+      "shippingCountryCode": "",
+      "shippingEmail": "lbjohnson81@gmail.com",
+      "shippingName": "Leslie Cartlidge",
+      "shippingPhone": "",
+      "shippingProvince": "",
+      "shippingProvinceCode": "",
+      "shippingState": "MS",
+      "shippingType": "Economy",
+      "shippingZip": "38701-7507",
+      "orderDateGS": "2024-03-28 07:56:55.164",
+      "isChangeMaterialCode": true
+  }
+}

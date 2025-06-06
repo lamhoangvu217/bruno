@@ -1,0 +1,15 @@
+meta {
+  name: update item id price
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{host}}/item-inventories/item-id-price
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjkwNDQzNjgyLCJpYXQiOjE2OTAzNTcyODJ9.5DS0cE_mvrPqRkBH9LPRFhSEXoHmeKaTFTF1HcUI01M
+}

@@ -1,0 +1,26 @@
+meta {
+  name: update
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{host}}/product-material-knittings/:id
+  body: json
+  auth: bearer
+}
+
+params:path {
+  id: 
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "product_knitting_material_type_id":"",
+      "knitting_type_id":""
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: list
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{crg_host}}/operations/:id/parts
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: eo1tsstMhGdE
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,28 @@
+meta {
+  name: save
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{host}}/receipt-product-inventories
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "variantInventoryId" : "z8jmYPcbB9ixDD3e",
+      "bin": "Vendor",
+      "supplierMaterialId" : "DT7isjjucpXNk4x",
+      "quantity": 0,
+      "inventory": 0,
+      "balance": 0,
+      "unrestricted": 0,
+      "price": 85000
+  }
+}

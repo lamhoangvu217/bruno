@@ -1,0 +1,23 @@
+meta {
+  name: update-receipt old
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{host}}/receipt-imports/update-receipt-old?page=1&limit=100&from=2023-09-30T17:00:00Z&to=2023-10-31T16:59:59Z
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 100
+  from: 2023-09-30T17:00:00Z
+  to: 2023-10-31T16:59:59Z
+  ~search: 20231109121901
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE3MDAyMTI4ODUsImlhdCI6MTcwMDEyNjQ4NX0.BzjMRAIgVc24VUkg5SGs0FPZMTbg7M6EMzyTCpWQ8VY
+}

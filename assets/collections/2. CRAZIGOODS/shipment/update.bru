@@ -1,0 +1,23 @@
+meta {
+  name: update
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{host}}/shipments/EwducQ28PAf9W9L
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      // "totalDelivered": 2510,
+      // "totalOrder": 2416,
+      "totalCustomsCleared":5335
+  }
+}

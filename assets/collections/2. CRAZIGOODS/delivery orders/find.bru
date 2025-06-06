@@ -1,0 +1,20 @@
+meta {
+  name: find
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{host}}/delivery-orders/:id/:production-order-id/find
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: wxmYkAnWadWqWtNc
+  production-order-id: 5GN3UFR3EV7XB9P3w4
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTEwMjU3MTksImlhdCI6MTY5MDkzOTMxOX0.159z42yfk3e9AOdqA6zAa6KobdFY2wZjtQy8_IcZFiE
+}

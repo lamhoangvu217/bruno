@@ -1,0 +1,22 @@
+meta {
+  name: save
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/user-accounts
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "userId":"asdasd",
+      "accountId": "afadsa"
+  }
+}

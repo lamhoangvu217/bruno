@@ -1,0 +1,15 @@
+meta {
+  name: list product operation
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{crg_host}}/product-operations
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

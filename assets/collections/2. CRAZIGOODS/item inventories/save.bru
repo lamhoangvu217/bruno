@@ -1,0 +1,25 @@
+meta {
+  name: save
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{host}}/item-inventories
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "itemId": "2QSoJxDQ2syTfhFDhA4kc",
+      "itemIdPrice": "2QSoJxDQ2syTfhFDhA4kc",
+      "productionOrderId": "LZHpz4xbemybsxQyMFn",
+      "receiptProductInventoryId": "5GHgXtEcXFKjjLVuMA",
+      "quantity": 100
+  }
+}

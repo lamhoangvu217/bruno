@@ -1,0 +1,20 @@
+meta {
+  name: update many item status
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{host}}/items/update-many-item-status
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjgyODUxNjEwLCJpYXQiOjE2ODI3NjUyMTB9.b5S024yWr2-KfkqQzLo8ggSUO4-SC_Ih4kecnsZK2H0
+}
+
+body:multipart-form {
+  file: @file(/Users/tadalu/Downloads/generated (4).csv)
+  itemIds: ["sss", "yyy"]
+}

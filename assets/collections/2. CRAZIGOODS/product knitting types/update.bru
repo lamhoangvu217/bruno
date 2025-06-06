@@ -1,0 +1,21 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{crg_host}}/product-knitting-types/eo1yHLQ8H29p
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "name": "Type 1.1"
+  }
+}

@@ -1,0 +1,29 @@
+meta {
+  name: statistic order mysql
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{host}}/orders/statistic-mysql
+  body: none
+  auth: bearer
+}
+
+params:query {
+  ~search: 123456789
+  ~limit: 20
+  ~page: 1
+  ~tracked: untracked
+  ~from: 2022-12-20T00:00:00Z
+  ~to: 2022-12-26T23:59:59Z
+  ~productName: Test1
+  ~orderStatus: waiting_for_packing
+  ~paymentStatus: unpaid
+  ~status: 1
+  ~all: true
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjg0MDQ0NzA5LCJpYXQiOjE2ODM5NTgzMDl9.e5_ii0fynSkNFOvSkhkU4MfVIF03P5NICCFko6dxyfU
+}

@@ -1,0 +1,23 @@
+meta {
+  name: list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/final-profits?page=1&limit=10&from=2023-08-16T17:00:00Z&to=2023-08-18T16:59:59Z&vendorId=iUwuncG9hQjJ
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 10
+  from: 2023-08-16T17:00:00Z
+  to: 2023-08-18T16:59:59Z
+  vendorId: iUwuncG9hQjJ
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjkyMjg5MDI1LCJpYXQiOjE2OTIyMDI2MjV9.O3azeWl3Fmh5zATuO4g4zDjZtPQUoDbauWaL6bd6kGw
+}

@@ -1,0 +1,19 @@
+meta {
+  name: detail
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{host}}/shipmenst/:shipment-id
+  body: none
+  auth: bearer
+}
+
+params:path {
+  shipment-id: 
+}
+
+auth:bearer {
+  token: {{token}}
+}

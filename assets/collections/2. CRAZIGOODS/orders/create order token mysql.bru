@@ -1,0 +1,65 @@
+meta {
+  name: create order token mysql
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/orders
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "customerNote": "",
+      "lineItems": [
+          {
+              "artworkBack": "",
+              "artworkFront": "https://s3.hn-1.cloud.cmctelecom.vn/god-system-images/designs/_GGPREKEY_1724384554_GGPREKEY_GM136964-5797078860004-14199485858020-GlitterandPetT-Shirt-LightBluePrint-1-side-XL.png",
+              "itemSku": "GGGPTSXL13",
+              "preset": "",
+              "asin": "8210194661604",
+              "unfulfillQuantity": 1,
+              "urlMockup": "https://m.media-amazon.com/images/I/81Jf0pj6GuL._AC_SL1500_.jpg",
+              "variantNote": "",
+              "variantTitle": "",
+              "productId": "GPTS",
+              "customize" : "[{\"name\":\"Custom Chest (Normal number will be converted to roman numeral)\",\"value\":\"Mama1\"},{\"name\":\"Custom Sleeve\",\"value\":\"K\\u003c3\"},{\"name\":\"Select Design and Lettering Color\",\"value\":\"White\"},{\"name\":\"Select Product Type\",\"value\":\"Crewneck Sweatshirt\"},{\"name\":\"Select Color\",\"value\":\"Black\"},{\"name\":\"Select Size\",\"value\":\"M\"},{\"name\":\"Customization Url\",\"value\":\"https://zme-caps.amazon.com/t/PYLUHlBJ2xzw/-hl2d1p9uf-geY15ys9VpDqBqU06JxO_oX1Se6QMigU/22\"},{\"name\":\"Customer Photo\",\"value\":\"https://d2yx9kyz45cdeb.cloudfront.net/amazon-customization/d251ab07-acee-5fb9-7b3e-4930ff5a8e8c.jpg\"}]",
+              "isCustomize" : true
+          },
+          {
+              "artworkBack": "",
+              "artworkFront": "https://api.podlovers.com/print-files/cb0b1929-be12-4b46-99e6-2b3072c397e4/production",
+              "itemSku": "GGPPSW2XL17",
+              "preset": "",
+              "asin": "8088008130788",
+              "unfulfillQuantity": 1,
+              "urlMockup": "https://m.media-amazon.com/images/I/81Jf0pj6GuL._AC_SL1500_.jpg",
+              "variantNote": "",
+              "variantTitle": "",
+              "productId": "PPSW",
+              "customize" : "[{\"name\":\"Custom Chest (Normal number will be converted to roman numeral)\",\"value\":\"Mama1\"},{\"name\":\"Custom Sleeve\",\"value\":\"K\\u003c3\"},{\"name\":\"Select Design and Lettering Color\",\"value\":\"White\"},{\"name\":\"Select Product Type\",\"value\":\"Crewneck Sweatshirt\"},{\"name\":\"Select Color\",\"value\":\"Black\"},{\"name\":\"Select Size\",\"value\":\"M\"},{\"name\":\"Customization Url\",\"value\":\"https://zme-caps.amazon.com/t/PYLUHlBJ2xzw/-hl2d1p9uf-geY15ys9VpDqBqU06JxO_oX1Se6QMigU/22\"},{\"name\":\"Customer Photo\",\"value\":\"https://d2yx9kyz45cdeb.cloudfront.net/amazon-customization/d251ab07-acee-5fb9-7b3e-4930ff5a8e8c.jpg\"}]",
+              "isCustomize" : true
+          }
+      ],
+      "orderId": "order000141",
+      "shippingAddress1": "1742 W Azalea St",
+      "shippingCity": "Greenville",
+      "shippingCountry": "US",
+      "shippingCountryCode": "",
+      "shippingEmail": "lbjohnson81@gmail.com",
+      "shippingName": "Leslie Cartlidge",
+      "shippingPhone": "",
+      "shippingProvince": "",
+      "shippingProvinceCode": "",
+      "shippingState": "MS",
+      "shippingType": "Economy",
+      "shippingZip": "38701-7507",
+      "orderDateGS": "2024-03-28 07:56:55.164" 
+  }
+}

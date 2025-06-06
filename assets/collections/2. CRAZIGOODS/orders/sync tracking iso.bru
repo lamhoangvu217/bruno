@@ -1,0 +1,23 @@
+meta {
+  name: sync tracking iso
+  type: http
+  seq: 44
+}
+
+get {
+  url: {{host}}/orders/sync-tracking-iso?page=1&limit=20&search=0d1EuhsGv
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 20
+  search: 0d1EuhsGv
+  ~orderStatus: packing_completed
+  ~productIds: DCWW2AWgRZf7Ltn
+}
+
+auth:bearer {
+  token: {{token}}
+}

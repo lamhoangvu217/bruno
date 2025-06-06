@@ -1,0 +1,15 @@
+meta {
+  name: sync one line ship tracking
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{host}}/line-ship-trackings/sync/9200190328575243405124
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

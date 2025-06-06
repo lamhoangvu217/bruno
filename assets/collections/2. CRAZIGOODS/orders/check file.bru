@@ -1,0 +1,26 @@
+meta {
+  name: check file
+  type: http
+  seq: 37
+}
+
+post {
+  url: https://loki-nest.crazigoods.com/validate
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "itemType": "pet",
+      "width": 12589,
+      "height": 11716,
+      "link" :"https://printio-widget-live.s3.amazonaws.com/6649D848-450E-4006-9F21-14237D5F9043.png",
+      "itemInput": "PPSW-l0p3YHXxV-1-1-1-Black-L-2 Sides",
+      "id": "l0p3YHXxV-1-1-1"
+  }
+}

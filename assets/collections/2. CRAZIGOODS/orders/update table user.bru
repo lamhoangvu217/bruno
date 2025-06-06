@@ -1,0 +1,21 @@
+meta {
+  name: update table user
+  type: http
+  seq: 22
+}
+
+put {
+  url: {{host}}/users/update-table-user
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjYzOTE0YTljMWIwNDQzZWFmNWNhNDQyOCIsImVtYWlsIjoiZGF0bnRAZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4ifSwiZXhwIjoxNjcwNjU0MzE3LCJpYXQiOjE2NzA1Njc5MTd9.5San6rM4t3_czxIfE6iFtSCQTHDKKo0TN3ULk6VSJ4w
+}
+
+body:json {
+  {
+      "column": "discord_id"
+  }
+}

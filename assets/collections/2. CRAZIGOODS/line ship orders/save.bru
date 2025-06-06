@@ -1,0 +1,41 @@
+meta {
+  name: save
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{host}}/line-ship-orders
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "refOrder": "PR1",
+      "declaredValue": 100.2,
+      "shippingType" : "normal",
+      "fullName": "huy peo",
+      "address1":"",
+      "address2": "",
+      "city": "",
+      "email": "huypeo1@gmail.com",
+      "phone": "0312312312",
+      "postCode": "",
+      "state" : "",
+      "country": "US",
+      "customerNote": "aaa",
+      "zoneJFK": 5,
+      "zoneLAX" : 4,
+      "items" : [
+          {
+              "sku" : "",
+              "quantity" : 1
+          }
+      ]
+  }
+}

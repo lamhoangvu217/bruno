@@ -1,0 +1,15 @@
+meta {
+  name: migrate search string
+  type: http
+  seq: 28
+}
+
+get {
+  url: {{host}}/items/migrate-search-string
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,21 @@
+meta {
+  name: update vendor product
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{host}}/vendor-products/e5CagteKRJMA
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjgwNDI0NTA1LCJpYXQiOjE2ODAzMzgxMDV9.ZP5aEHV6habglsPVRWXG2ykDmoQqOx9ClhZrrd2BoQU
+}
+
+body:json {
+  {
+      "name" : "Test 02"
+  }
+}

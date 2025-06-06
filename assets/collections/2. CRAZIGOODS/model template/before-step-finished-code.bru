@@ -1,0 +1,20 @@
+meta {
+  name: before-step-finished-code
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{crg_host}}/model-templates/before-step-finished-code?operationId&modelTemplateId
+  body: none
+  auth: bearer
+}
+
+params:query {
+  operationId: null
+  modelTemplateId: null
+}
+
+auth:bearer {
+  token: {{token}}
+}

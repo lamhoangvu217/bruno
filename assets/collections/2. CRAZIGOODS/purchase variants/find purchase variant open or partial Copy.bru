@@ -1,0 +1,20 @@
+meta {
+  name: find purchase variant open or partial Copy
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/purchase-variants/open-or-partial?supplierId=3mPHrzNKaVPnEa&variantInventoryId=DCxYWLJrXjS1eYi
+  body: none
+  auth: bearer
+}
+
+params:query {
+  supplierId: 3mPHrzNKaVPnEa
+  variantInventoryId: DCxYWLJrXjS1eYi
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTYzMDM1NTYsImlhdCI6MTY5NjIxNzE1Nn0.k4peDj1lwk_Zeaj8hDUFDvuBb9yPpinFkGMRUVNcYZ8
+}

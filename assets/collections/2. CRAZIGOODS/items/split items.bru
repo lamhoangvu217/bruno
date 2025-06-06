@@ -1,0 +1,29 @@
+meta {
+  name: split items
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/items/split
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiZGF0bnRAZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc2OTY1NTM1LCJpYXQiOjE2NzY4NzkxMzV9.As1hoc50puCa-ob9uU-aFLAc3mXpQwTV0Dybij3xvZs
+}
+
+body:json {
+  {
+      "orderId": "vr3pJzPT98ygmwaL",
+      "items": [
+          [
+              "ww2hgWEE9sCW5zBa", "ww2krKjhR2SFYe7E"
+          ],
+          [
+              "ww2ktXh7kDFDkdBe", "ww2kv2LfojyQxsMY"
+          ]
+      ]
+  }
+}

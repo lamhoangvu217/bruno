@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "2. CRAZIGOODS",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

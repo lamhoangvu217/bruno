@@ -1,0 +1,22 @@
+meta {
+  name: list
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{host}}/supplier-material?name=Inflow&page=1&limit=20&cursor=xxxx
+  body: none
+  auth: bearer
+}
+
+params:query {
+  name: Inflow
+  page: 1
+  limit: 20
+  cursor: xxxx
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjg3MzI5MzEzLCJpYXQiOjE2ODcyNDI5MTN9.NLw05Np-GWX3mZaa-cS1ieIWXxi0tojBHLmbdIt4eh8
+}

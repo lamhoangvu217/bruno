@@ -1,0 +1,15 @@
+meta {
+  name: export all
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{host}}/asin-config-layers/export
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE3MTM3OTcyNzksImlhdCI6MTcxMzc2ODQ3OX0.zbxVPv0gHHNByf0YTTUALeqOGfk2TJpcuYrtTPmjdf4
+}

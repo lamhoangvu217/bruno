@@ -32,6 +32,8 @@ const LastOpenedCollections = require('./store/last-opened-collections');
 const registerNetworkIpc = require('./ipc/network');
 const registerCollectionsIpc = require('./ipc/collection');
 const registerPreferencesIpc = require('./ipc/preferences');
+const registerGitIpc = require('./ipc/git');
+console.log('Loaded Git IPC module:', registerGitIpc);
 const Watcher = require('./app/watcher');
 const { loadWindowState, saveBounds, saveMaximized } = require('./utils/window');
 const registerNotificationsIpc = require('./ipc/notifications');
@@ -189,6 +191,9 @@ app.on('ready', async () => {
   registerCollectionsIpc(mainWindow, watcher, lastOpenedCollections);
   registerPreferencesIpc(mainWindow, watcher, lastOpenedCollections);
   registerNotificationsIpc(mainWindow, watcher);
+  console.log('About to register Git IPC handlers...');
+  registerGitIpc(mainWindow);
+  console.log('Git IPC handlers registered');
 });
 
 // Quit the app once all windows are closed

@@ -1,0 +1,25 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{host}}/colors/:id
+  body: json
+  auth: bearer
+}
+
+params:path {
+  id: eoBZNQFYLQ5e
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "name": "Red"
+  }
+}

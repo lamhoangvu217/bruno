@@ -1,0 +1,22 @@
+meta {
+  name: update amount by date (new price in receipt product inventory)
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8082/warehouse-statistic-details/update-amount-by-date?from=2025-01-01&to=2025-01-05
+  body: none
+  auth: bearer
+}
+
+params:query {
+  from: 2025-01-01
+  to: 2025-01-05
+  ~date: 2025-01-01
+  ~materialCode: H001-GPN00L
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,21 @@
+meta {
+  name: update wallet transaction
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{host}}/wallet-transactions/3mKb6Ru1wegNAJ
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJIdXlua2Nlb0BnbWFpbC5jb20iLCJyb2xlIjoiRklOQU5DRSIsInRpZXJJZCI6IiJ9LCJleHAiOjE2Nzc0NzAwOTEsImlhdCI6MTY3NzM4MzY5MX0.Q-B1VT84pxWY3fKpy9Sfrhxs7U435SlN6IOfRUxQqaU
+}
+
+body:json {
+  {
+      "status": "success"
+  }
+}

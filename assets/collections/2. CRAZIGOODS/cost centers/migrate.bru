@@ -1,0 +1,15 @@
+meta {
+  name: migrate
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/cost-centers/migrate
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2NzUzOTgyOTksImlhdCI6MTY3NTMxMTg5OX0.QLehDt6yd2tXn7n0xmthbXtopr0AnCQQ9Tgk3YmQAA4
+}

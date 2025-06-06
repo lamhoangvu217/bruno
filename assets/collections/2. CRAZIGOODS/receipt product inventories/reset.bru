@@ -1,0 +1,15 @@
+meta {
+  name: reset
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{host}}/receipt-product-inventories/reset
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjg5OTU1Mjc5LCJpYXQiOjE2ODk4Njg4Nzl9.PCTDTWEht85FVw5IVNpxjbAXEXme4X7yUG1KqPLw0O0
+}

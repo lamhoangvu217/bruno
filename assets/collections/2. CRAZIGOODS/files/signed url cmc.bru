@@ -1,0 +1,19 @@
+meta {
+  name: signed url cmc
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{host}}/files/signed-url-cmc?key=items/abc.png
+  body: none
+  auth: bearer
+}
+
+params:query {
+  key: items/abc.png
+}
+
+auth:bearer {
+  token: {{token}}
+}

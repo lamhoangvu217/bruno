@@ -1,0 +1,23 @@
+meta {
+  name: list box scanout
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/box-scanouts?search&from=&to&shift&userId
+  body: none
+  auth: bearer
+}
+
+params:query {
+  search: null
+  from: 
+  to: null
+  shift: null
+  userId: null
+}
+
+auth:bearer {
+  token: {{token}}
+}

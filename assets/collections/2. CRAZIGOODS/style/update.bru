@@ -1,0 +1,28 @@
+meta {
+  name: update
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{host}}/styles/:id
+  body: json
+  auth: bearer
+}
+
+params:path {
+  id: 
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "name":"",
+      "code":"",
+      "file":"",
+      "variantId":""
+  }
+}

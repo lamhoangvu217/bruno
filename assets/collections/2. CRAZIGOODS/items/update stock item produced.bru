@@ -1,0 +1,15 @@
+meta {
+  name: update stock item produced
+  type: http
+  seq: 25
+}
+
+post {
+  url: {{host}}/items/update-stock-item-produced
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

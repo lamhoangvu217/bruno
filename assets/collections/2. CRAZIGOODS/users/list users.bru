@@ -1,0 +1,21 @@
+meta {
+  name: list users
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{host}}/users?page=1&limit=30
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 30
+  ~keyword: Kozitee
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjgxNjQzMTMsImlhdCI6MTY2ODA3NzkxMywidXNlcklEIjoiNjM2NjAyN2Q3ZjhmNzc2NThjMzdkYTBhIiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiJ9.yqniXhMUU3t5JjauMbSMfdNYEMUlOseGzqrKEwHGHMw
+}

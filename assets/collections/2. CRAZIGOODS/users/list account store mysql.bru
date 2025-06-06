@@ -1,0 +1,15 @@
+meta {
+  name: list account store mysql
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{host}}/users/account-store
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjYzYmU2Yjc3ODhiOWVhMTU2MGY5Yzc3NSIsImVtYWlsIjoiZGF0bnQxMUBnb2Rncm91cC5jbyIsInJvbGUiOiJQUk9EVUNUSU9OX1NUQUZGIn0sImV4cCI6MTY3MzUxMjE0NywiaWF0IjoxNjczNDI1NzQ3fQ.RifVqdMYlC9stZ_Wvo3G0DGAhWulllhBUvtMugPmXtI
+}

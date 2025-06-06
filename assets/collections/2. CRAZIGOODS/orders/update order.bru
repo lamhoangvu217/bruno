@@ -1,0 +1,34 @@
+meta {
+  name: update order
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{host}}/orders/638aa6e8d330bd1cf86564c9
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzAxNTAxNzIsImlhdCI6MTY3MDA2Mzc3MiwidXNlcklEIjoiNjM4OTRmYjJlYWNkNTIwYzJmNDA4NTk0IiwiZW1haWwiOiJkYXRudEBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiJ9.ovAz0cFCUXlk_8_mnFxV4QFbhzxhoEGuOnLe_AFiLbA
+}
+
+body:json {
+  {
+      "shippingAddress": {
+          "address1": "149 KAHOMA VILLAGE LOOP",
+          "address2": "",
+          "city": "Bac Ninh City 2",
+          "country": "US",
+          "countrycode": "US",
+          "email": "",
+          "full_name": "Tadaluuu 2",
+          "phone": "+1 415-419-8616 ext. 84422",
+          "province": "",
+          "provincecode": "",
+          "state": "BN",
+          "zip": "96761-2763"
+      }
+  }
+}

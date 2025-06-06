@@ -1,0 +1,24 @@
+meta {
+  name: create design
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{crg_host}}/designs/eoBXAS4f26wW
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "description":"testtttt",
+      "productId":"vrJCSwCtGiL9eZpe",
+      "tags":["43", "test"],
+      "files":["11111", "22222"]
+  }
+}

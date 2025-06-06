@@ -1,0 +1,21 @@
+meta {
+  name: list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/colors?search=R
+  body: none
+  auth: bearer
+}
+
+params:query {
+  search: R
+  ~limit: 1
+  ~page: 2
+}
+
+auth:bearer {
+  token: {{token}}
+}

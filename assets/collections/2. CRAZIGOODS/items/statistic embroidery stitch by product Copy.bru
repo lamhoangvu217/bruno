@@ -1,0 +1,21 @@
+meta {
+  name: statistic embroidery stitch by product Copy
+  type: http
+  seq: 33
+}
+
+get {
+  url: {{host}}/items/list-embroidery-stitch-by-product?date=2024-10-10&typeProductName=Embroidered T-Shirt Pocket&type=LessThan5Min
+  body: none
+  auth: bearer
+}
+
+params:query {
+  date: 2024-10-10
+  typeProductName: Embroidered T-Shirt Pocket
+  type: LessThan5Min
+}
+
+auth:bearer {
+  token: {{token}}
+}

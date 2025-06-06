@@ -1,0 +1,25 @@
+meta {
+  name: create wallet transaction
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/wallet-transactions
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImlVd3NjOEdmVGF4RyIsImVtYWlsIjoiZGF0bnQwMUBnb2Rncm91cC5jbyIsInJvbGUiOiJVU0VSIiwidGllcklkIjoiIn0sImV4cCI6MTY3NzU0NjY4MywiaWF0IjoxNjc3NDYwMjgzfQ.l6RsuHBzLWzxGx8_qvFzvss4RYQHU1o3gVuMbD66l9U
+}
+
+body:json {
+  {
+      "transactionId" : "Test 06",
+      "gateway": "paypal",
+      "note": "xxx",
+      "image": "https://api.podlovers.com/print-files/1bc5ca7f-c86b-4953-9c55-8c83ff94e6a6/production",
+      "amount": 80
+  }
+}

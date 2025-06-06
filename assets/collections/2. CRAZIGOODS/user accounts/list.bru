@@ -1,0 +1,20 @@
+meta {
+  name: list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/user-accounts?limit=20&type=fulfill
+  body: none
+  auth: bearer
+}
+
+params:query {
+  limit: 20
+  type: fulfill
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjgwNzA1MDE3LCJpYXQiOjE2ODA2MTg2MTd9.PSf30yx8nMMl1FQxrjVDG4jXbQs47W3oOokSWtaPj3E
+}

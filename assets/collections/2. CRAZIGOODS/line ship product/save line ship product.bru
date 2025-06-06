@@ -1,0 +1,39 @@
+meta {
+  name: save line ship product
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/line-ship-products
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE3MDUxMDY5MjcsImlhdCI6MTcwNTAyMDUyN30.eG4AD2d5DLMvLRZKHYKh1yHcS_hzjODbJxF366wKRGs
+}
+
+body:json {
+  {
+      "name": "Embroidered Sweatshirt",
+      "variants": [
+          {
+              "name" : "S",
+              "sku": "GGESWS01",
+              "packageHeight" : 20,
+              "packageWeight": 384,
+              "packageWidth" : 10,
+              "packageLength": 3
+          },
+          {
+              "name" : "S",
+              "sku": "GGESWM02",
+              "packageHeight" : 20,
+              "packageWeight": 384,
+              "packageWidth" : 10,
+              "packageLength": 3
+          }
+      ]
+  }
+}

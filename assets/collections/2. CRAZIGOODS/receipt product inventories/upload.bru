@@ -1,0 +1,19 @@
+meta {
+  name: upload
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{host}}/receipt-product-inventories/update-stock
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTAwNDEzNDEsImlhdCI6MTY4OTk1NDk0MX0.kFt6_OT15IDq-ZijvOOCvGyHZj2y86wH0GTICNps4pw
+}
+
+body:multipart-form {
+  file: @file(/Users/dat/Desktop/up stock 21.xlsx)
+}

@@ -1,0 +1,15 @@
+meta {
+  name: list from db
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{host}}/estimate-profits/db
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,42 @@
+meta {
+  name: detail transfer out
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://localhost:8082/storage-transfers/send/3sprGZXk9ctRNg
+  body: none
+  auth: bearer
+}
+
+params:query {
+  ~search: 
+  ~from: 
+  ~to: 
+  ~page: 1
+  ~limit: 20
+  ~cursor: 
+  ~status: 
+}
+
+headers {
+  Accept: application/json, text/plain, */*
+  Accept-Language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE3NDgyNDgyMzQsImlhdCI6MTc0ODIxOTQzNH0.r-PydPSnjeBf8tbfwglNVFwEUHYMZkR6y3J7nN_60z8
+  Connection: keep-alive
+  DNT: 1
+  Origin: http://localhost:5173
+  Referer: http://localhost:5173/
+  Sec-Fetch-Dest: empty
+  Sec-Fetch-Mode: cors
+  Sec-Fetch-Site: same-site
+  User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+  sec-ch-ua: "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+  sec-ch-ua-mobile: ?0
+  sec-ch-ua-platform: "macOS"
+}
+
+auth:bearer {
+  token: {{token}}
+}

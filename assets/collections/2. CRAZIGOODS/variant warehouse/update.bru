@@ -1,0 +1,27 @@
+meta {
+  name: update
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{host}}/variant-warehouses/:id
+  body: json
+  auth: bearer
+}
+
+params:path {
+  id: 21DjAAR5iGyEfSugc
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "inventory": 1,
+      "unrestricted" : 1,
+      "balance" : 1
+  }
+}

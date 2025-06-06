@@ -1,0 +1,22 @@
+meta {
+  name: update attribute
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{host}}/attributes/6362a5decd1f3fe83e638eb8
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc1MzMxODAsImlhdCI6MTY2NzQ0Njc4MCwidXNlcklEIjoiT2JqZWN0SUQoXCI2MzYxM2ZkOTIxMzNhOWEyZDMzYzYxNTZcIikiLCJlbWFpbCI6ImRhdG50QGdvZGdyb3VwLmNvIiwicm9sZSI6IkFETUlOIn0.WEI69tyBQKpzVYbNaqRVmZivv91_JEA32CJH6EyTpWg
+}
+
+body:json {
+  {
+      "type": "Color2",
+      "values": []
+  }
+}

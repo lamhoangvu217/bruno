@@ -1,0 +1,25 @@
+meta {
+  name: auto-create-po-old-items-embroidery
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{host}}/production-orders/auto-create-po-old-items-embroidery?limit=20&itemStatus=pending&page=1&vendorProductionId=3mKb6PeZ7gYgvn&typeProductParentId=gHA5WXMTi93W
+  body: none
+  auth: bearer
+}
+
+params:query {
+  limit: 20
+  itemStatus: pending
+  page: 1
+  vendorProductionId: 3mKb6PeZ7gYgvn
+  typeProductParentId: gHA5WXMTi93W
+  ~productIds: 3zRzKvYktMTBdx,3zL5mZwMaxtHui,DCd1GW91a2UJDFe,DCZmkENfV9YCD9A
+  ~search: PVOxcs1Ln
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTQ0MDIwOTYsImlhdCI6MTY5NDMxNTY5Nn0.JdOwVl2yuztAh_Q3EIWsJvqrJgieDsb9Zn_337vqNmY
+}

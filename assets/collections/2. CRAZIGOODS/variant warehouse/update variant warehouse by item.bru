@@ -1,0 +1,21 @@
+meta {
+  name: update variant warehouse by item
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{host}}/variant-warehouses/update-variant-warehouse-from-item
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjkxNzIyNjE3LCJpYXQiOjE2OTE2MzYyMTd9.pct5BcL3c3EWOG3E0tChaOfYlPXKuuCnYQnF2A8pxqc
+}
+
+body:json {
+  {
+      "from": "2023-07-04T17:00:00Z"
+  }
+}

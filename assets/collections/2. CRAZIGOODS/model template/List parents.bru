@@ -1,0 +1,15 @@
+meta {
+  name: List parents
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{crg_host}}/model-templates/parents
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,22 @@
+meta {
+  name: save onos express account
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/onos-express
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjYzYjc2Y2I3MDA2ZDY4YjEyMjU5YmM0YSIsImVtYWlsIjoiZGF0bnQwMUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiJ9LCJleHAiOjE2NzMxNDE0NDUsImlhdCI6MTY3MzA1NTA0NX0.yfvAPHp0x60kANBgwWSuD1qraKrwfOLdrt7a29257to
+}
+
+body:json {
+  {
+      "email": "contact@kozitee.com",
+      "password": "godgroup"
+  }
+}

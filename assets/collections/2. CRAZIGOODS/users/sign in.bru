@@ -1,0 +1,41 @@
+meta {
+  name: sign in
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8082/users/sign-in
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "email": "huypq@godgroup.co",
+      "password": "congtyTNHHCrazygoods@2025"
+  }
+}
+
+script:pre-request {
+  console.log(pm)
+  console.log("response : ", pm)
+  // // var res = pm.response.json();
+  // console.log("data", res.data)
+  // // pm.environment.set('token', res.data.token);
+  // // console.log("token", pm.environment.get('token', res.data.token))
+}
+
+tests {
+  console.log(pm);
+  console.log(111, res.getBody);
+  var res = res.getBody();
+  console.log("data", res.data)
+  bru.setEnvVar('token', res.data.token);
+  console.log("refreshToken", bru.getEnvVar('refreshToken', res.data.refreshToken))
+  console.log("token", bru.getEnvVar('token', res.data.token))
+}

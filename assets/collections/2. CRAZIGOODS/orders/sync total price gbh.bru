@@ -1,0 +1,20 @@
+meta {
+  name: sync total price gbh
+  type: http
+  seq: 55
+}
+
+get {
+  url: {{host}}/orders/sync-total-price-gbh?from=2024-12-31T17:00:00Z&to=2025-03-15T16:59:59Z
+  body: none
+  auth: bearer
+}
+
+params:query {
+  from: 2024-12-31T17:00:00Z
+  to: 2025-03-15T16:59:59Z
+}
+
+auth:bearer {
+  token: {{token}}
+}

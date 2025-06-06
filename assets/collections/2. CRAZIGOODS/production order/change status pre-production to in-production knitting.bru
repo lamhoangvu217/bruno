@@ -1,0 +1,23 @@
+meta {
+  name: change status pre-production to in-production knitting
+  type: http
+  seq: 22
+}
+
+put {
+  url: {{host}}/production-orders/:id/inproduction-knitting
+  body: none
+  auth: bearer
+}
+
+params:query {
+  ~null: 
+}
+
+params:path {
+  id: 2Nq4kg3fxSbr9kH3b2ri4
+}
+
+auth:bearer {
+  token: {{token}}
+}

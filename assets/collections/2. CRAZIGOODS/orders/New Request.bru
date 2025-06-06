@@ -1,0 +1,20 @@
+meta {
+  name: New Request
+  type: http
+  seq: 40
+}
+
+post {
+  url: https://api.pro.crazigoods.com/orders/sync-tracking-old-orders?from=2023-06-10T17:00:00Z&to=2023-06-15T16:59:59Z
+  body: none
+  auth: bearer
+}
+
+params:query {
+  from: 2023-06-10T17:00:00Z
+  to: 2023-06-15T16:59:59Z
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2ODcwNDg5NzgsImlhdCI6MTY4Njk2MjU3OH0.Ga0MuoldYY4o31QTpNS2oQaInaRTH75MxG3UFyvcqr8
+}

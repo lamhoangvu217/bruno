@@ -1,0 +1,32 @@
+meta {
+  name: export all orders
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{host}}/orders/export-orders?all=true&gmt=8
+  body: none
+  auth: bearer
+}
+
+params:query {
+  all: true
+  gmt: 8
+  ~search: 636df37e06d89d1e7c37aa1c
+  ~tracked: untracked
+  ~from: 2022-11-20T17:00:00Z
+  ~to: 2022-12-09T16:59:59Z
+  ~productName: Test1
+  ~orderStatus: pending
+  ~paymentStatus: paid
+  ~status: 1
+}
+
+headers {
+  Content-Disposition: attachment; 
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiZGF0bnRAZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc1OTA0Mzc3LCJpYXQiOjE2NzU4MTc5Nzd9.VPXFSiJIpDX6_CA5C3NF4w-oR0zHwijj_Jpwb5RGZD4
+}

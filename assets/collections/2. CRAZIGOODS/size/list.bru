@@ -1,0 +1,19 @@
+meta {
+  name: list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/sizes?search=s
+  body: none
+  auth: bearer
+}
+
+params:query {
+  search: s
+}
+
+auth:bearer {
+  token: {{token}}
+}

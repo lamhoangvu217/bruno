@@ -1,0 +1,21 @@
+meta {
+  name: scan in
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{host}}/production-orders/3mPHroMv1VYbMG/scan-in
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjg0OTM4NjIzLCJpYXQiOjE2ODQ4NTIyMjN9.VeRqWiPv98-5hW7ZRIfVdSDUh7XR4r5MKSgUJsIi664
+}
+
+body:json {
+  {
+     "itemIds": ["Gf6CAk7ve-1-2-2", "Gf6CAk7ve-1-2-2", "Cqw2OUoPT-1-1-1", "uuVnv0Q5x-1-2-2", "uuVnv0Q5x-1-2-2"]
+  }
+}

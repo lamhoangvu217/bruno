@@ -1,0 +1,15 @@
+meta {
+  name: delete item inventory failed
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{host}}/item-inventories/item-inventory-failed
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTQwNTA3MzEsImlhdCI6MTY5Mzk2NDMzMX0.NgE-plOw96j0X8DsfkW-4G2j-lJlTiBh4l5Tr5M1kWE
+}

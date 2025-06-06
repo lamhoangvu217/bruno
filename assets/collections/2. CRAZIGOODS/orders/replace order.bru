@@ -1,0 +1,22 @@
+meta {
+  name: replace order
+  type: http
+  seq: 30
+}
+
+post {
+  url: {{host}}/orders/vrYQvXV6B6zNJAhE/replace
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoieG9uZ3hhbzE3MTFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwidGllcklkIjoiIn0sImV4cCI6MTY3ODQxODE4NSwiaWF0IjoxNjc4MzMxNzg1fQ.HoyXSoa6BawYKMZcb5FkIm74lzB6CFMluwkpXEBu62A
+}
+
+body:json {
+  {
+      "itemIds": ["wwmntF2VuDNKh6mE"],
+      "totalCostBy" : "baseCost"
+  }
+}

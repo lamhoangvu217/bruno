@@ -1,0 +1,30 @@
+meta {
+  name: save
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/variant-inventories/:id
+  body: json
+  auth: bearer
+}
+
+params:path {
+  id: FBuYJhyVP6ZMM3r
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "color": "white",
+      "size": "1 Side",
+      "material": "LEN-M",
+      "materialDescription" : "LEN-M 1 Side",
+      "isAuto": true,
+      "baseUnit" : "pcs"
+  }
+}

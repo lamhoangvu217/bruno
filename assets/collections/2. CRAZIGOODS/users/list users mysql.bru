@@ -1,0 +1,21 @@
+meta {
+  name: list users mysql
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{crg_host}}/users/mysql?search=huypq@godgroup.co
+  body: none
+  auth: bearer
+}
+
+params:query {
+  search: huypq@godgroup.co
+  ~keyword: ninh
+  ~cursor: e5353n43ULAA
+}
+
+auth:bearer {
+  token: {{token}}
+}

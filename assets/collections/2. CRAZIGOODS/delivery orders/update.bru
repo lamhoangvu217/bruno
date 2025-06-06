@@ -1,0 +1,21 @@
+meta {
+  name: update
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{host}}/delivery-orders/KpZRV8kCWHNHnbD1oRA
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "deliveryOrdersStatus": "partial"
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: change location
+  type: http
+  seq: 14
+}
+
+put {
+  url: {{host}}/production-orders/3w6ZfKHtP3rvR6/change-location
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjg1MDI3MTIwLCJpYXQiOjE2ODQ5NDA3MjB9.0-nm5g_ZQrrr2zl_ZmyK_X8SWNk4svxBgtuhaN9-sKI
+}
+
+body:json {
+  {
+      "locationId" : "iUwuncG9hQjJ"
+  }
+}

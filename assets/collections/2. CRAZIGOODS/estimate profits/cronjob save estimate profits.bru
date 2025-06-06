@@ -1,0 +1,22 @@
+meta {
+  name: cronjob save estimate profits
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/estimate-profits/cronjob-save-estimate-profits
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "from": "2025-02-02T17:00:00Z",
+      "to": "2025-02-03T16:59:59Z"
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: missing tracking
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/fulfill-orders/missing-tracking?vendor=Onos POD
+  body: none
+  auth: bearer
+}
+
+params:query {
+  vendor: Onos POD
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjgwNjY2Mjg3LCJpYXQiOjE2ODA1Nzk4ODd9.LlxSM2X9w8cQcr-IPwjJ2XutcARY0R-33Lls1Qk0O3k
+}

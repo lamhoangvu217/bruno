@@ -1,0 +1,20 @@
+meta {
+  name: sync vendor model
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{host}}/models/sync-vendor-model?page=1&limit=10000
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 10000
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTc2NDc1NjUsImlhdCI6MTY5NzU2MTE2NX0.jn9l8GexmWAcupyMabMT2ARMfoXKtumIv749-gue6IQ
+}

@@ -1,0 +1,21 @@
+meta {
+  name: New Request
+  type: http
+  seq: 136
+}
+
+post {
+  url: http://localhost:8080/queue
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "num" : 2
+  }
+}

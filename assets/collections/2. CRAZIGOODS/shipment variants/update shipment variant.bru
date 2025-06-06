@@ -1,0 +1,29 @@
+meta {
+  name: update shipment variant
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{host}}/shipment-variants/e5CYWQeqBUeN
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwZjF2V1lZREc1dkxlIiwiZW1haWwiOiJwcm9kdWN0aW9uX21hbmFnZXJAZ29kZ3JvdXAuY28iLCJyb2xlIjoiUFJPRFVDVElPTl9NQU5BR0VSIiwidGllcklkIjoiIn0sImV4cCI6MTY3OTYzOTgyOCwiaWF0IjoxNjc5NTUzNDI4fQ.x2Ovn5Y8fb4NtOP9NwoaTrdClQ-A23mNxXdkVTFjePE
+}
+
+body:json {
+  {
+      "sku": "sku1",
+      "weight": 12.4,
+      "length": 21,
+      "width": 2314,
+      "height": 21.4,
+      "quantityMax": 1,
+      "quantityMin": 1,
+      "price": 12,
+      "variation": "8 inches"
+  }
+}

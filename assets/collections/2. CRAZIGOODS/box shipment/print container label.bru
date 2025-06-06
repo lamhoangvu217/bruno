@@ -1,0 +1,15 @@
+meta {
+  name: print container label
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/box-shipments/y4W2fqcdyW7MB2Kk/print-container-label
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

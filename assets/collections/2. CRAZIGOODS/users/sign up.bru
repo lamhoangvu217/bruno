@@ -1,0 +1,24 @@
+meta {
+  name: sign up
+  type: http
+  seq: 17
+}
+
+post {
+  url: {{host}}/users/sign-up
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "email" : "admin12@godgroup.co",
+      "firstName": "",
+      "lastName" : "",
+      "password": "Godgroup@2023"
+  }
+}

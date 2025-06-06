@@ -1,0 +1,41 @@
+meta {
+  name: import trackings
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{host}}/trackings/import
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjkzMzkzMjAsImlhdCI6MTY2OTI1MjkyMCwidXNlcklEIjoiNjM2MTNmZDkyMTMzYTlhMmQzM2M2MTU2IiwiZW1haWwiOiJkYXRudEBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiJ9.j7RuQPf-IUXYJx_0MPpEq4ZsvPN_sC5rDPHcGmPNUjc
+}
+
+body:json {
+  [
+      {
+          "trackingNumber": "12345678913",
+          "trackingStatus": "pre_shipment",
+          "trackingUrl": "https://google.com",
+          "carrier": "Onos",
+          "orderId": "6374a4d5dbf888d1862f61ce"
+      },
+      {
+          "trackingNumber": "12345678914",
+          "trackingStatus": "pre_shipment",
+          "trackingUrl": "https://google.com",
+          "carrier": "Onos",
+          "orderId": "6374ac1a4ebc3b52c1fab9fc"
+      },
+      {
+          "trackingNumber": "12345678915",
+          "trackingStatus": "pre_shipment",
+          "trackingUrl": "https://google.com",
+          "carrier": "Onos",
+          "orderId": "6374afd0fd87ea6770779410"
+      }
+  ]
+}

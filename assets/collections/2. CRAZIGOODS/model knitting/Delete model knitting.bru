@@ -1,0 +1,15 @@
+meta {
+  name: Delete model knitting
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{crg_host}}/model-knittings/3mJ77o6yVzbCN6
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

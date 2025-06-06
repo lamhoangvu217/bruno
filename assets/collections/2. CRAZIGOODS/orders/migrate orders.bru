@@ -1,0 +1,15 @@
+meta {
+  name: migrate orders
+  type: http
+  seq: 20
+}
+
+post {
+  url: {{host}}/orders/migrate-orders
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzAzOTU4NDgsImlhdCI6MTY3MDMwOTQ0OCwidXNlcklEIjoiNjM4ZDYyNDJiMDk0ZjViYWMwZDExNzYzIiwiZW1haWwiOiJkYXRudEBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiJ9.qHrGjCYhUPXHgGNfkjOHzecMhko0oA-CDMNdJdjvCFQ
+}

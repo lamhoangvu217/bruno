@@ -1,0 +1,15 @@
+meta {
+  name: delete
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{host}}/machines/3mJ7HVnzJKnRnY
+  body: text
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

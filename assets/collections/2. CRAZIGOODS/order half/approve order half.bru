@@ -1,0 +1,19 @@
+meta {
+  name: approve order half
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/order-halfs/:id/approve
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: 3mPJ2TpxBH7FSa
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjg4NTUzNzk2LCJpYXQiOjE2ODg0NjczOTZ9.8vYuZNJhS61d5t6O9p44-Imb-7ZedzFQesqTQyN1b9A
+}

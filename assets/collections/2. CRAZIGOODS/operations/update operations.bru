@@ -1,0 +1,22 @@
+meta {
+  name: update operations
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{crg_host}}/operations/iVnBxoXYLwc6
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "name" : "pressing",
+      "code" : "PRS"
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: update
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{host}}/line-ship-orders/2QSSEk4MMetxpDJog6rck
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "fullName": "Athens LEASING OFFICE"
+  }
+}

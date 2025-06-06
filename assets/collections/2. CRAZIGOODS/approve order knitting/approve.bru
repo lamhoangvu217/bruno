@@ -1,0 +1,25 @@
+meta {
+  name: approve
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{crg_host}}/approve-order-knittings/:id/approve
+  body: json
+  auth: bearer
+}
+
+params:path {
+  id: eoBUzRwAq7vA
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "is_ok":true
+  }
+}

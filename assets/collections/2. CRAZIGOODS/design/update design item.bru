@@ -1,0 +1,108 @@
+meta {
+  name: update design item
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{crg_host}}/designs/eoBXAS4f26wW/items
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  [
+     {
+          "size":"s",
+          "file":"",
+          "modelTemplateId":"3sprGZbj6N4vUz",
+          "operationId":"",
+          "densityFileDefault": "linkfile111111",
+          "knittingFile": "linkfile22222",
+          "densityFile": "linkfile333333",
+          "quantification": [
+              {
+                  "productInventoryId":"FC27FeaDixZRb5i", // Sợi
+                  "estimate":1,
+                  "actual":0,
+                  "color": "",
+                  "colorOrder": 1,
+                  "typeColor": "auto",
+                  "yarnRollsOrder":[1,2,3,4]
+              },
+              {
+                 "productInventoryId":"FC27FeaDixZRb5i", // Sợi
+                  "estimate":1,
+                  "actual":0,
+                  "color": "red",
+                  "colorOrder": 2,
+                  "yarnRollsOrder":[1,2,3,4]
+              },
+              {
+                 "productInventoryId":"FC27FeaDixZRb5i", // Sợi
+                  "estimate":1,
+                  "actual":0,
+                  "color": "black",
+                  "colorOrder": 1
+              }
+          ]
+      },
+     {
+          "size":"m",
+          "file":"",
+          "modelTemplateId":"3sprGZbj6N4vUz",
+          "operationId":"",
+          "quantification": [
+              {
+                  "productInventoryId":"FC27FeaDixZRb5i", // Sợi
+                  "estimate":1,
+                  "actual":0,
+                  "color": "",
+                  "colorOrder": 1,
+                  "typeColor": "auto"
+              },
+              {
+                 "productInventoryId":"FC27FeaDixZRb5i", // Sợi
+                  "estimate":1,
+                  "actual":0,
+                  "color": "green",
+                  "colorOrder": 2
+              },
+              {
+                 "productInventoryId":"FC27FeaDixZRb5i", // Sợi
+                  "estimate":1,
+                  "actual":0,
+                  "color": "gold",
+                  "colorOrder": 1
+              }
+          ]
+      },
+      {
+          "size":"l",
+          "file":"",
+          "modelTemplateId":"3sprGZbj6N4vUz",
+          "operationId":"",
+          "quantification": [
+              {
+                  "productInventoryId":"FC27FeaDixZRb5i", // Sợi
+                  "estimate":1,
+                  "actual":0,
+                  "color": "",
+                  "colorOrder": 1,
+                  "typeColor": "auto"
+              },
+              {
+                 "productInventoryId":"FC27FeaDixZRb5i", // Sợi
+                  "estimate":1,
+                  "actual":0,
+                  "color": "white11",
+                  "colorOrder": 2
+              }
+          ]
+      }
+  ]
+}

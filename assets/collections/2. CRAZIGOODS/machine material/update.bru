@@ -1,0 +1,22 @@
+meta {
+  name: update
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/machine-materials/change-yarn-color
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "quantity": 1,
+      "variantInventoryId": "23SRsNGQUR6r4GSnU"
+  }
+}

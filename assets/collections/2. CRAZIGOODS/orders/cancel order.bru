@@ -1,0 +1,27 @@
+meta {
+  name: cancel order
+  type: http
+  seq: 31
+}
+
+delete {
+  url: {{host}}/orders/3wAGG6igzGpiUg/cancel
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImU1MzUzbjQzVUxBQSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc5MDE3ODYzLCJpYXQiOjE2Nzg5MzE0NjN9.Jefz8ahKisXJr1wIM4zEiGkpMHk5sY4cKLRfb90JHF4
+}
+
+body:json {
+  {
+      "items": [
+          {
+              "itemId": "46vXX5axmDYHxc",
+              "refundBaseCost": false,
+              "quantity": 1
+          }
+      ]
+  }
+}

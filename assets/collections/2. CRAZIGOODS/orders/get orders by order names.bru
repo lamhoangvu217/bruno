@@ -1,0 +1,27 @@
+meta {
+  name: get orders by order names
+  type: http
+  seq: 18
+}
+
+post {
+  url: {{host}}/orders/orders-by-order-names?page=1&limit=1
+  body: json
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 1
+  ~orderNames: Ayv2ur2kc, sX9ePOzhn
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzAxMzY2OTksImlhdCI6MTY3MDA1MDI5OSwidXNlcklEIjoiNjM4OTRmYjJlYWNkNTIwYzJmNDA4NTk0IiwiZW1haWwiOiJkYXRudEBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiJ9.hYmBQRZqNm81IvrHirjxWjoxfrfbOk3Dl8dVYLw3TJs
+}
+
+body:json {
+  {
+      "orderNames": [ "Ayv2ur2kc", "sX9ePOzhn"]
+  }
+}

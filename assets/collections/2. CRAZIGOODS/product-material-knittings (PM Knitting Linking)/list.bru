@@ -1,0 +1,15 @@
+meta {
+  name: list
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/product-material-knittings
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

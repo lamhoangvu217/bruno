@@ -1,0 +1,56 @@
+meta {
+  name: detail order GS
+  type: http
+  seq: 42
+}
+
+get {
+  url: https://api.1.godmerch.com/v1/orders?search=%23GM41665&storeIds=&statuses=&from=&to=&reorderType=&nameFrom=&nameTo=&shippingType=&financialStatus=&page=1&perPage=20&all=false&costCenterId=&includeCases=&costCenterIdIsNull=false&isGiftCard=false&vendor=&vendorProductId=&printProviderId=&color=&size=
+  body: none
+  auth: bearer
+}
+
+params:query {
+  search: %23GM41665
+  storeIds: 
+  statuses: 
+  from: 
+  to: 
+  reorderType: 
+  nameFrom: 
+  nameTo: 
+  shippingType: 
+  financialStatus: 
+  page: 1
+  perPage: 20
+  all: false
+  costCenterId: 
+  includeCases: 
+  costCenterIdIsNull: false
+  isGiftCard: false
+  vendor: 
+  vendorProductId: 
+  printProviderId: 
+  color: 
+  size: 
+}
+
+headers {
+  authority: api.1.godmerch.com
+  accept: application/json, text/plain, */*
+  accept-language: en,vi;q=0.9
+  authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTY4MzMwMjQsImlhdCI6MTY5Njc0NjYyNCwidXNlcklEIjoiZjg1MGM5Y2MtM2JhNS00MGIzLTg0NzEtYmU2MGE5Y2Q2ODYyIiwiZW1haWwiOiJkYXRudEBnb2Rncm91cC5jbyIsInJvbGUiOiJTVVBFUl9BRE1JTiJ9.0ZACWWAwwIDqxp87fKLDFrIPdjiC1q1Gr03MOxTgnKM
+  origin: https://1.godmerch.com
+  referer: https://1.godmerch.com/
+  sec-ch-ua: "Google Chrome";v="117", "Not;A=Brand";v="8", "Chromium";v="117"
+  sec-ch-ua-mobile: ?0
+  sec-ch-ua-platform: "macOS"
+  sec-fetch-dest: empty
+  sec-fetch-mode: cors
+  sec-fetch-site: same-site
+  user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+}
+
+auth:bearer {
+  token: {{token}}
+}

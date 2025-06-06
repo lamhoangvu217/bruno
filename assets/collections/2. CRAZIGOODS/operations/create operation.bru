@@ -1,0 +1,22 @@
+meta {
+  name: create operation
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{crg_host}}/operations
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "name": "washing",
+      "code": ""
+  }
+}

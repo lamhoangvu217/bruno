@@ -1,0 +1,21 @@
+meta {
+  name: update item status
+  type: http
+  seq: 17
+}
+
+put {
+  url: {{host}}/items/2QUGmWtYNUc7m7D8nuCdv/status
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "itemStatus": "cancelled"
+  }
+}

@@ -1,0 +1,22 @@
+meta {
+  name: save final profit
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/final-profits
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "from": "2024-10-22T17:00:00Z",
+      "to": "2024-10-23T16:59:59Z"
+  }
+}

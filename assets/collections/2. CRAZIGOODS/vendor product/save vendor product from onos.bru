@@ -1,0 +1,21 @@
+meta {
+  name: save vendor product from onos
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{host}}/vendor-products/onos
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjg2MzYzMDA2LCJpYXQiOjE2ODYyNzY2MDZ9.dEfxqNKgGitf9jEB2XpGAf0NSj5I-OoXe9iiTXEM65o
+}
+
+body:json {
+  {
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImdvZGdyb3VwZnVsZmlsbG1lbnRAZ21haWwuY29tIiwicGFzc3dvcmQiOiJHb2RAMjAyMiJ9.xtLaZECuEnBYBDSSeHfWrgr5Truh-pfDcBQ2Ehf5GPU"
+  }
+}

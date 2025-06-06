@@ -1,0 +1,20 @@
+meta {
+  name: sync cost orders_1
+  type: http
+  seq: 27
+}
+
+post {
+  url: {{host}}/orders/sync-cost-orders
+  body: none
+  auth: bearer
+}
+
+params:query {
+  ~from: 2023-02-15T00:00:00Z
+  ~to: 2023-02-15T23:59:59Z
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImU1MzUzbjQzVUxBQSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc5MzgwNTQ4LCJpYXQiOjE2NzkyOTQxNDh9.jAbNRTbPlmEUIr4ZqhKlRVCYvuxMk10JLUTA58L9lOw
+}

@@ -1,0 +1,15 @@
+meta {
+  name: migrate user account
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{host}}/users/migrate-user-account
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjYzOWZiNGZkYTUyYTkwZDdhYTU5MGQ0ZSIsImVtYWlsIjoiZGF0bnRAZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4ifSwiZXhwIjoxNjczMTQ2MDU5LCJpYXQiOjE2NzMwNTk2NTl9.xEp05IHBBcO0UxrOnMZk4wxxB_gAvhrlcOHOTRJcaKo
+}

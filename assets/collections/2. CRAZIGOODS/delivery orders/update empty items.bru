@@ -1,0 +1,21 @@
+meta {
+  name: update empty items
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{host}}/delivery-orders/update-empty-items?page=5&limit=20&status=pending
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 5
+  limit: 20
+  status: pending
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTQ1MTA4ODksImlhdCI6MTY5NDQyNDQ4OX0.FAEss9kcMX3cxakuV54mG7Uza7GxX9CokVqIVungp_Y
+}

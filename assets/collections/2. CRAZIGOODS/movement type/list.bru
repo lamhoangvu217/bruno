@@ -1,0 +1,19 @@
+meta {
+  name: list
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{crg_host}}/movement-types?limit=1
+  body: none
+  auth: bearer
+}
+
+params:query {
+  limit: 1
+}
+
+auth:bearer {
+  token: {{token}}
+}

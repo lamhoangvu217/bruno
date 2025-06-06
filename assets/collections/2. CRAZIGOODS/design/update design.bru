@@ -1,0 +1,31 @@
+meta {
+  name: update design
+  type: http
+  seq: 9
+}
+
+put {
+  url: {{crg_host}}/designs/3pZqMFF5mkCfXk
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "description": "testtt update",
+      "productId": "vrJCSwCtGiL9eZpe",
+      "files": [
+          {
+              "id": "eoBbZtgiK8Wi" // giữ nguyên file thì để design file id
+          },
+          {
+              "file": "5555" // thêm file mới thì ko có id, chỉ có file
+          }
+          // xoá file thì không có trong đây nữa
+      ]
+  }
+}

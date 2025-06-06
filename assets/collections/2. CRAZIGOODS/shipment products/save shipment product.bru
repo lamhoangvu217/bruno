@@ -1,0 +1,38 @@
+meta {
+  name: save shipment product
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/shipment-products
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwZjF2V1lZREc1dkxlIiwiZW1haWwiOiJwcm9kdWN0aW9uX21hbmFnZXJAZ29kZ3JvdXAuY28iLCJyb2xlIjoiUFJPRFVDVElPTl9NQU5BR0VSIiwidGllcklkIjoiIn0sImV4cCI6MTY3OTcwNTQ1OSwiaWF0IjoxNjc5NjE5MDU5fQ.jpR-EiXjL2kh2NiSA4ut4kg9h_axbwbrxaYFyw8SikE
+}
+
+body:json {
+  {
+      "name": "Test2",
+      "identity": "ID Test 2",
+      "sku":"",
+      "vendorId": "e5CRvU9YwbbW",
+      "calculateByPack": true,
+      "variants": [
+          {
+              "sku" : "sku",
+              "weight": 123.4,
+              "length": 22,
+              "width": 23,
+              "height": 24.4,
+              "quantityMax": 5,
+              "quantityMin": 1,
+              "price": 10,
+              "variation": "6 inches"
+          }
+      ]
+  }
+}

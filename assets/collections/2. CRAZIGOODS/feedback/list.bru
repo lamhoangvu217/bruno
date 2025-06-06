@@ -1,0 +1,26 @@
+meta {
+  name: list
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{crg_host}}/feedbacks?limit&page&cursor&form&to&search&isMyFeedback
+  body: none
+  auth: bearer
+}
+
+params:query {
+  limit: null
+  page: null
+  cursor: null
+  form: null
+  to: null
+  search: null
+  isMyFeedback: null
+  ~next_cursor: null
+}
+
+auth:bearer {
+  token: {{token}}
+}

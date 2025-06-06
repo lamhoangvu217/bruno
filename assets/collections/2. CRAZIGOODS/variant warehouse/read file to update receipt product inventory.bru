@@ -1,0 +1,20 @@
+meta {
+  name: read file to update receipt product inventory
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{host}}/variant-warehouses/read-file-to-update-receipt-product-inventory
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTA2NzcwMTIsImlhdCI6MTY5MDU5MDYxMn0.-HfWbJRTAxvgyUoEl925aD3CoHdQA10T_kep0_ZIE0c
+}
+
+body:multipart-form {
+  file: @file(/Users/dat/Desktop/upload warehouse 1707.xlsx)
+  fileName: Kiểm kê 15-16/07/2023
+}

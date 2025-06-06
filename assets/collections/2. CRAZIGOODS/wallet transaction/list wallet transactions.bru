@@ -1,0 +1,22 @@
+meta {
+  name: list wallet transactions
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/wallet-transactions?cursor=fake cursor&limit=10&page=2
+  body: none
+  auth: bearer
+}
+
+params:query {
+  cursor: fake cursor
+  limit: 10
+  page: 2
+  ~type: payment
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNzckxFcll4ZG9NZXJrIiwiZW1haWwiOiJ0ZXN0QGdvZGdyb3VwLmNvIiwicm9sZSI6IlVTRVIiLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc4NTA2MDMwLCJpYXQiOjE2Nzg0MTk2MzB9.WXbY_6S5OZbQ_x24ZPQrUW5GMNVL4i9cGtGwRRvVwhs
+}

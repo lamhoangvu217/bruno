@@ -1,0 +1,15 @@
+meta {
+  name: sync
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/flight-informations/sync
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE3MDY1NzUxODgsImlhdCI6MTcwNjQ4ODc4OH0.jya9hZcsoWRkjzCceV_ZoBLV9Ai7r3WyNioYb_bd96w
+}

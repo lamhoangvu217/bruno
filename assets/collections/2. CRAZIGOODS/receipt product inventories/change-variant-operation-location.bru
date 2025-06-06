@@ -1,0 +1,30 @@
+meta {
+  name: change-variant-operation-location
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{host}}/receipt-product-inventories/change-variant-operation-location
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  
+  {
+      "items":[
+          {
+              "workOrderId": "9AVLpfAIO-25-2-1",
+              "quantity": 1
+          }
+          // {
+          //     "quantity":0
+          // }
+      ]
+  }
+}

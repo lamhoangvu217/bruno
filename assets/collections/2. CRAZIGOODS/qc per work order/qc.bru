@@ -1,0 +1,27 @@
+meta {
+  name: qc
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/qc-work-orders
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "items":[
+          {
+              "workOrderId":"kn1-9AVLpfAIO-1-1-1",
+              "IsOk": false,
+              "note":"123123"
+          }
+      ]
+  }
+}

@@ -1,0 +1,22 @@
+meta {
+  name: list
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/qc-files?qcFileStatus=pending&search=xxx&designerId =xaa
+  body: none
+  auth: bearer
+}
+
+params:query {
+  qcFileStatus: pending
+  search: xxx
+  designerId : xaa
+  ~isRepair: false
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTY5NTE5NjUsImlhdCI6MTY5Njg2NTU2NX0.Ka7r8BM5Wq5tIYiLgNPP8Ac-wEuIadI1lZurecJx4Jg
+}

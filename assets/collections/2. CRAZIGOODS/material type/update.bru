@@ -1,0 +1,29 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{crg_host}}/material-types/:id
+  body: json
+  auth: bearer
+}
+
+params:query {
+  ~: null
+}
+
+params:path {
+  id: eo1yJphqV5Jn
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "name":"Material 1.1"
+  }
+}

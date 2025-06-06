@@ -1,0 +1,25 @@
+meta {
+  name: update
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{host}}/estimate-profits/:id
+  body: json
+  auth: bearer
+}
+
+params:path {
+  id: iVHAKE5xEebJ
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "status" : "0"
+  }
+}

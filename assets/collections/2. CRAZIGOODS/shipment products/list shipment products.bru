@@ -1,0 +1,20 @@
+meta {
+  name: list shipment products
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/shipment-products?cursor=e5CYUvTS71D2
+  body: none
+  auth: bearer
+}
+
+params:query {
+  cursor: e5CYUvTS71D2
+  ~search: xcasa
+}
+
+auth:bearer {
+  token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImU1MzUzbjQzVUxBQSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc5NzA1NDE0LCJpYXQiOjE2Nzk2MTkwMTR9.HfMyHUv3VYYwVYv8GurujGfgH-5eI3zA33A2rW5Ta34
+}

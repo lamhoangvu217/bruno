@@ -1,0 +1,15 @@
+meta {
+  name: update item fwd
+  type: http
+  seq: 29
+}
+
+post {
+  url: {{host}}/items/update-item-fwd-all
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

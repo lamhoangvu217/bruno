@@ -1,0 +1,21 @@
+meta {
+  name: update model type hand
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{host}}/models/update-model-type-hand?page=1&limit=200&search=HEMB
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 200
+  search: HEMB
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTc3MDE3MDcsImlhdCI6MTY5NzYxNTMwN30.aum6oIGdxVd1ikkuuB2kWzjhldSyZjS3O7j3V8H8L3M
+}

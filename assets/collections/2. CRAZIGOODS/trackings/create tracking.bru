@@ -1,0 +1,25 @@
+meta {
+  name: create tracking
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/trackings
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE3MTIzMDYxMDgsImlhdCI6MTcxMjI3NzMwOH0.EBzw7DZmzKvHAmiF1jDih9rSSEu9hCdCr1CC_KGnkjI
+}
+
+body:json {
+  {
+      "trackingNumber": "9434611105500849003616",
+      "trackingStatus": "delivered",
+      "trackingUrl": "https://tools.usps.com/go/TrackConfirmAction.action?tLabels=9434611105500849003616",
+      "carrier": "USPS",
+      "orderId": "2NrXJ3LV7qhPufDk75jeA"
+  }
+}

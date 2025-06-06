@@ -1,0 +1,24 @@
+meta {
+  name: presigned url
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{host}}/files/presigned-url?key=https://customily-godgroup.s3.ap-southeast-1.amazonaws.com/production-orders/00773.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZM7QC75JTAV77MNJ%2F20230510%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230510T072146Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=9737b031687da94584183db2d336b83cd096f6ee81a31adfe0e03d9340d550a1
+  body: none
+  auth: bearer
+}
+
+params:query {
+  key: https://customily-godgroup.s3.ap-southeast-1.amazonaws.com/production-orders/00773.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256
+  X-Amz-Credential: AKIAZM7QC75JTAV77MNJ%2F20230510%2Fap-southeast-1%2Fs3%2Faws4_request
+  X-Amz-Date: 20230510T072146Z
+  X-Amz-Expires: 900
+  X-Amz-SignedHeaders: host
+  X-Amz-Signature: 9737b031687da94584183db2d336b83cd096f6ee81a31adfe0e03d9340d550a1
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImU1MzUzbjQzVUxBQSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjgzNzg5NTE5LCJpYXQiOjE2ODM3MDMxMTl9.JMHyU2bIYOJ85MoNeG4lscZKKIpC9TxGW2KriUCCfds
+}

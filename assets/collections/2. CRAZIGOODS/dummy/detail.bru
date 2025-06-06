@@ -1,0 +1,19 @@
+meta {
+  name: detail
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{host}}/dummies/:id
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: 
+}
+
+auth:bearer {
+  token: {{token}}
+}

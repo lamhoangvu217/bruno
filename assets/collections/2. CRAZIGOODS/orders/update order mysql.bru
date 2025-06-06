@@ -1,0 +1,21 @@
+meta {
+  name: update order mysql
+  type: http
+  seq: 24
+}
+
+put {
+  url: {{host}}/orders/2QUGgjzwqu4aukygYJLYA/mysql
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "zoneJFK": 6
+  }
+}

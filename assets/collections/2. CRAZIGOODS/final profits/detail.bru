@@ -1,0 +1,22 @@
+meta {
+  name: detail
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/final-profits/detail?page=1&limit=20&from=2023-08-16T17:00:00Z&to=2023-08-17T16:59:00Z
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 20
+  from: 2023-08-16T17:00:00Z
+  to: 2023-08-17T16:59:00Z
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,20 @@
+meta {
+  name: save stock by time
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/warehouse-statistics/save?date=2025-01-02&productInventory=Swaddle
+  body: none
+  auth: bearer
+}
+
+params:query {
+  date: 2025-01-02
+  productInventory: Swaddle
+}
+
+auth:bearer {
+  token: {{token}}
+}

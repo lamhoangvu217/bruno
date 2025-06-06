@@ -1,0 +1,21 @@
+meta {
+  name: save tier
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/tiers
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2ODU3NjMwODEsImlhdCI6MTY4NTY3NjY4MX0.PQaT1fKiFoD997-WBuQVnlxZ0MEB1RKC_EoB6OxJ-f0
+}
+
+body:json {
+  {
+      "name": "VIP PRO"
+  }
+}

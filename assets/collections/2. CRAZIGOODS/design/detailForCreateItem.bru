@@ -1,0 +1,19 @@
+meta {
+  name: detailForCreateItem
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{crg_host}}/designs/:id/create-item
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: eoBXAS4f26wW
+}
+
+auth:bearer {
+  token: {{token}}
+}

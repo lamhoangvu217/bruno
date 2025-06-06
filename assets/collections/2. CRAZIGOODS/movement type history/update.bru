@@ -1,0 +1,21 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{crg_host}}/movement-type-histories/eo25tmD6JecQ
+  body: text
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:text {
+  {
+      "changeQuantity" : 200
+  }
+}

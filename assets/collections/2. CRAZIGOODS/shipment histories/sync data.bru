@@ -1,0 +1,24 @@
+meta {
+  name: sync data
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/shipment-histories/sync-data?limit=1000&search=KVL80AUyO-1-1-1&orderType=normal&shipmentType=shipment_out
+  body: none
+  auth: bearer
+}
+
+params:query {
+  limit: 1000
+  search: KVL80AUyO-1-1-1
+  orderType: normal
+  shipmentType: shipment_out
+  ~from: 2024-11-30T17:00:00Z
+  ~to: 2024-12-31T16:59:59Z
+}
+
+auth:bearer {
+  token: {{token}}
+}

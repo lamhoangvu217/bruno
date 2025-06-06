@@ -1,0 +1,19 @@
+meta {
+  name: list children
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{crg_host}}/model-knittings/:id/children
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: 3wAGw8Ze2MRUj8
+}
+
+auth:bearer {
+  token: {{token}}
+}

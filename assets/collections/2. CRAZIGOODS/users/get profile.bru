@@ -1,0 +1,15 @@
+meta {
+  name: get profile
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{host}}/users/profile-mysql
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiJ9LCJleHAiOjE2NzM5NDQxODAsImlhdCI6MTY3Mzg1Nzc4MH0.B1aE636akWFCGw8XBg4FYq0phi_JmS0p3i-0NhX3NT4
+}

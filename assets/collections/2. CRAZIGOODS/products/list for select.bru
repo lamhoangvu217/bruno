@@ -1,0 +1,19 @@
+meta {
+  name: list for select
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{crg_host}}/products/select?factoryId=kkdk
+  body: none
+  auth: bearer
+}
+
+params:query {
+  factoryId: kkdk
+}
+
+auth:bearer {
+  token: {{token}}
+}

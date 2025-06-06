@@ -1,0 +1,19 @@
+meta {
+  name: confirm supply raw
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{host}}/delivery-orders/:id/confirm-supply-raw
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: 5BXtR7rdk5jydrEYrc
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IkRTdGthckN3em1ldGFWdCIsImVtYWlsIjoiaHV1dnRAZ29kZ3JvdXAuY28iLCJyb2xlIjoiUFJPRFVDVElPTl9TVEFGRiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2ODgyMjkxODAsImlhdCI6MTY4ODE0Mjc4MH0.qdFi-8CsxtSCnu6awtntGu9BBtc2gf3ZtmiOuo3YCwA
+}

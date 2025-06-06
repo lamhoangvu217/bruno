@@ -1,0 +1,25 @@
+meta {
+  name: save vendor product variant
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/vendor-product-variants/e5CagteKRJMA
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjgwNDI0NTA1LCJpYXQiOjE2ODAzMzgxMDV9.ZP5aEHV6habglsPVRWXG2ykDmoQqOx9ClhZrrd2BoQU
+}
+
+body:json {
+  [
+      {
+          "sku": "xxx",
+          "color": "yy",
+          "size": "aaa"
+      }
+  ]
+}

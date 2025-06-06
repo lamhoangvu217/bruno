@@ -1,0 +1,57 @@
+meta {
+  name: create order knitting
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{crg_host}}/orders-knitting
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "customerNote": "",
+      "lineItems": [
+          {
+              "artworkBack": "https://m.media-amazon.com/images/I/81Jf0pj6GuL._AC_SL1500_.jpg",
+              "artworkFront": "https://m.media-amazon.com/images/I/81Jf0pj6GuL._AC_SL1500_.jpg",
+              "itemSku": "CA00S",
+              "asin": "8210194661604",
+              "unfulfillQuantity": 1,
+              "urlMockup": "https://m.media-amazon.com/images/I/81Jf0pj6GuL._AC_SL1500_.jpg",
+              "variantNote": "",
+              "variantTitle": "",
+              "productId": "CA",
+              "customize": "[{\"name\":\"Upload Photo\",\"value\":\"IMG_6700.jpeg\"},{\"name\":\"styleCode\",\"value\":\"CA_0003\"},{\"name\":\"knittingColor\",\"value\":\"Green\"},{\"name\":\"22a4c33e-8c23-4676-903a-3d0b0061c8bc\",\"value\":\"https://s3.hn-1.cloud.cmctelecom.vn/god-system-images/amazon-customization/22a4c33e-8c23-4676-903a-3d0b0061c8bc.jpg\"},{\"name\":\"Custom Text (<3=heart shape)\",\"value\":\"dad est. 2024\"},{\"name\":\"Select Product Type\",\"value\":\"Combo Adult and Baby Hat\"},{\"name\":\"Select Hat Color\",\"value\":\"Black/Black\"},{\"name\":\"Select Baby Hat Size\",\"value\":\"Toddler\"},{\"name\":\"Select Adult Hat Size\",\"value\":\"Large\"},{\"name\":\"Add-on Custom T-Shirt for Dad\",\"value\":\"No, Thank You!\"},{\"name\":\"Thank You!\",\"value\":\"Thank You So Much!!!\"},{\"name\":\"Customization Url\",\"value\":\"https://zme-caps.amazon.com/t/nhBpsfgVCsh0/Rnzx2OGQDHFgs8aqRJ5VLEyXg46ZbBFYZVEreriDsUQ/23\"},{\"name\":\"Customer Photo\",\"value\":\"https://s3.hn-1.cloud.cmctelecom.vn/god-system-images/amazon-customization/dace5fae-2b1e-2dbf-175a-918de55b3e54.jpg\"}]",
+              "isCustomize": true,
+              // "styleCode":"WA90_0001",
+              // "knittingColor":"Black/White",
+              "fnsku": "",
+              "msku": "",
+              "linkBarcode": ""
+          }
+      ],
+      "orderId":"9016",
+      "shippingAddress1": "1ed742 W Azalea St",
+      "shippingCity": "Greenville",
+      "shippingCountry": "US",
+      "shippingCountryCode": "",
+      "shippingEmail": "lbjohnson81@gmail.com",
+      "shippingName": "Leslie Cartlidge",
+      "shippingPhone": "",
+      "shippingProvince": "",
+      "shippingProvinceCode": "",
+      "shippingState": "MS",
+      "shippingType": "Economy",
+      "shippingZip": "38701-7507",
+      "orderDateGS": "2024-03-28 07:56:55.164",
+      "isChangeMaterialCode": true,
+      "lotName": "tesst02"
+  }
+}

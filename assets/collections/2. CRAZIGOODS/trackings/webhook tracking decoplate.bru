@@ -1,0 +1,26 @@
+meta {
+  name: webhook tracking decoplate
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{host}}/trackings/webhook-tracking-deco-plate
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "status": "shipped",
+      "order_id": "118277",
+      "tracking_number": "123456",
+      "carrier": "ups",
+      "date_shipped" : "2024-02-05",
+      "shipment_method" : "ups_ground"
+  }
+}

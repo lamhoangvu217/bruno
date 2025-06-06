@@ -1,0 +1,25 @@
+meta {
+  name: split quantity item
+  type: http
+  seq: 22
+}
+
+post {
+  url: {{host}}/items/:id/split-quantity
+  body: json
+  auth: bearer
+}
+
+params:path {
+  id: LvcSDq4uizPdhkCDLcn
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTU3NTI5OTQsImlhdCI6MTY5NTY2NjU5NH0.-wtwx26KQ2JlQ-Wz0fF19XHUA1DChMkTKTN-nviX8I8
+}
+
+body:json {
+  {
+      "quantity": 30
+  }
+}

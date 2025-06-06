@@ -1,0 +1,30 @@
+meta {
+  name: create attribute
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/attributes
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc0OTU3MjQsImlhdCI6MTY2NzQwOTMyNCwidXNlcklEIjoiT2JqZWN0SUQoXCI2MzYxM2ZkOTIxMzNhOWEyZDMzYzYxNTZcIikiLCJlbWFpbCI6ImRhdG50QGdvZGdyb3VwLmNvIiwicm9sZSI6IkFETUlOIn0.ciA7aOZvGYyQbeEKclmfv6kDGgP_9shO1oujLrSEnT8
+}
+
+body:json {
+  {
+      "type": "Size",
+      "values" : [
+          {
+              "value": "S"
+          },
+           {
+              "value": "M"
+          }
+      ]
+  
+  }
+}

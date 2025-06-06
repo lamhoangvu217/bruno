@@ -1,0 +1,26 @@
+meta {
+  name: list items by item ids
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{host}}/items/item-ids?page=1&limit=20
+  body: json
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 20
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJ2ZW5kb3IxQGdvZGdyb3VwLmNvIiwicm9sZSI6IlZFTkRPUl9QUk9EVUNUSU9OIiwidGllcklkIjoiIn0sImV4cCI6MTY4Mjk5ODk1NCwiaWF0IjoxNjgyOTEyNTU0fQ.opwD9nQn0BYJhK74ofQ4yrS9S7I1GGGWMTSin1GwFAM
+}
+
+body:json {
+  {
+      "itemIds" : ["MgcRIkrTw-3-1-3", "MgcRIkrTw-2-1-3", "MgcRIkrTw-1-1-3"]
+  }
+}

@@ -1,0 +1,27 @@
+meta {
+  name: create machine
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/machines
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "manufacturer": "Hana",
+      "modelName": "KM-720X11",
+      "importDate": "2024-03-27T10:00:00Z",
+      "machineNumber": "MCH-10222",
+      "machineType": "normal",
+      "knittingTypeId": "eo21SLCErgEk", // knitting type 07 hoặc 14 (số kim)
+      "knittingHeadCount": 8 // 8 mỏ → dệt 8 áo/lần
+  }
+}

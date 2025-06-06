@@ -1,0 +1,27 @@
+meta {
+  name: reply
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{crg_host}}/feedbacks/:id
+  body: json
+  auth: bearer
+}
+
+params:path {
+  id: eo25sH1hEBB4
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "reason":"ng",
+      "status":"ng" // na or fixable
+      // "finishCodes":[""]
+  }
+}

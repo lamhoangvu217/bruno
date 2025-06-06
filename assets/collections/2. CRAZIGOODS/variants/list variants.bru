@@ -1,0 +1,19 @@
+meta {
+  name: list variants
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{host}}/variants/products/:product-id
+  body: none
+  auth: bearer
+}
+
+params:path {
+  product-id: 
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2ODYzMzMzMzMsImlhdCI6MTY4NjI0NjkzM30.30_y8GZSUXh2GKDrprap_vJHfVOubrWb0lNG3pVN9Mk
+}

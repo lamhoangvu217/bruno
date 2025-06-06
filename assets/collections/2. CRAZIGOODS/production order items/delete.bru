@@ -1,0 +1,15 @@
+meta {
+  name: delete
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/production-order-items
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2ODYxMzIyMTQsImlhdCI6MTY4NjA0NTgxNH0.4hH_cm903JsFFUEYhi9PiB0bJbpA8NtkYO0pSkzJs7A
+}

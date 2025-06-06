@@ -1,0 +1,21 @@
+meta {
+  name: list products
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/products?page=1&limit=10
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 10
+  ~keyword: Acrylic
+}
+
+auth:bearer {
+  token: {{token}}
+}

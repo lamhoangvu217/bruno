@@ -1,0 +1,57 @@
+meta {
+  name: create order api key mysql Hong
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8082/orders-knitting
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE3NDkxMTk0MjIsImlhdCI6MTc0OTA5MDYyMn0.tHbwSFu-beaeJot5l-ps3deZXw1vzPWLXb09qV_KvNY
+}
+
+body:json {
+  {
+      "customerNote": "",
+      "lineItems": [
+          {
+              "artworkBack": "https://s3.hn-1.cloud.cmctelecom.vn/god-system-images/designs/_GGPREKEY_1724384554_GGPREKEY_GM136964-5797078860004-14199485858020-GlitterandPetT-Shirt-LightBluePrint-1-side-XL.png",
+              "artworkFront": "https://s3.hn-1.cloud.cmctelecom.vn/god-system-images/designs/_GGPREKEY_1724384554_GGPREKEY_GM136964-5797078860004-14199485858020-GlitterandPetT-Shirt-LightBluePrint-1-side-XL.png",
+              "itemSku": "TSACO00S",
+              "asin": "8210194661604",
+              "unfulfillQuantity": 1,
+              "urlMockup": "https://m.media-amazon.com/images/I/81Jf0pj6GuL._AC_SL1500_.jpg",
+              "variantNote": "",
+              "variantTitle": "",
+              "productId": "PT1len01TS",
+              "customize": "[{\"name\":\"Upload Photo\",\"value\":\"IMG_6700.jpeg\"},{\"name\":\"styleCode\",\"value\":\"PT1len01TS_0001\"},{\"name\":\"knittingColor\",\"value\":\"WHITE5\"},{\"name\":\"22a4c33e-8c23-4676-903a-3d0b0061c8bc\",\"value\":\"https://s3.hn-1.cloud.cmctelecom.vn/god-system-images/amazon-customization/22a4c33e-8c23-4676-903a-3d0b0061c8bc.jpg\"},{\"name\":\"Custom Text (<3=heart shape)\",\"value\":\"dad est. 2024\"},{\"name\":\"Select Product Type\",\"value\":\"Combo Adult and Baby Hat\"},{\"name\":\"Select Hat Color\",\"value\":\"Black/Black\"},{\"name\":\"Select Baby Hat Size\",\"value\":\"Toddler\"},{\"name\":\"Select Adult Hat Size\",\"value\":\"Large\"},{\"name\":\"Add-on Custom T-Shirt for Dad\",\"value\":\"No, Thank You!\"},{\"name\":\"Thank You!\",\"value\":\"Thank You So Much!!!\"},{\"name\":\"Customization Url\",\"value\":\"https://zme-caps.amazon.com/t/nhBpsfgVCsh0/Rnzx2OGQDHFgs8aqRJ5VLEyXg46ZbBFYZVEreriDsUQ/23\"},{\"name\":\"Customer Photo\",\"value\":\"https://s3.hn-1.cloud.cmctelecom.vn/god-system-images/amazon-customization/dace5fae-2b1e-2dbf-175a-918de55b3e54.jpg\"}]",
+              "isCustomize": true,
+              // "styleCode":"WA90_0001",
+              // "knittingColor":"Black/White",
+              "fnsku": "",
+              "msku": "",
+              "linkBarcode": ""
+          }
+      ],
+      "orderId":"690",
+      "shippingAddress1": "1ed742 W Azalea St",
+      "shippingCity": "Greenville",
+      "shippingCountry": "US",
+      "shippingCountryCode": "",
+      "shippingEmail": "lbjohnson81@gmail.com",
+      "shippingName": "Leslie Cartlidge",
+      "shippingPhone": "",
+      "shippingProvince": "",
+      "shippingProvinceCode": "",
+      "shippingState": "MS",
+      "shippingType": "Economy",
+      "shippingZip": "38701-7507",
+      "orderDateGS": "2024-03-28 07:56:55.164",
+      "isChangeMaterialCode": true,
+      "lotName": "tesst02"
+  }
+}

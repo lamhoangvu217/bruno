@@ -1,0 +1,28 @@
+meta {
+  name: get orders by order names mysql
+  type: http
+  seq: 19
+}
+
+post {
+  url: {{host}}/orders/orders-by-order-names-mysql?page=1&limit=2&cursor=gGzTDy4u6f9e
+  body: json
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 2
+  cursor: gGzTDy4u6f9e
+  ~orderNames: Ayv2ur2kc, sX9ePOzhn
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiZGF0bnRAZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc1NDA5NDM2LCJpYXQiOjE2NzUzMjMwMzZ9.R3Ojfnxh_iv8j48H3HNEf5owqBrbztgdSc1-nLYMft4
+}
+
+body:json {
+  {
+      "orderNames": [ "N2IWRNPMR", "w00BnWlmJ", "mW4eoEFOB"]
+  }
+}

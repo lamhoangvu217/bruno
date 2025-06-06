@@ -1,0 +1,19 @@
+meta {
+  name: change status to in production
+  type: http
+  seq: 19
+}
+
+put {
+  url: {{host}}/production-orders/:id/inproduction
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: 3stYCRhYLLCc8p
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjkxMDgyOTEyLCJpYXQiOjE2OTA5OTY1MTJ9._fIzAH04AbYUiZP4WrMUgYT7_SuQWwrY0Mh6KkHQBo8
+}

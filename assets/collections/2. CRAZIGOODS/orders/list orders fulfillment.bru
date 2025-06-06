@@ -1,0 +1,19 @@
+meta {
+  name: list orders fulfillment
+  type: http
+  seq: 33
+}
+
+get {
+  url: {{host}}/orders/fulfillment?limit=20
+  body: none
+  auth: bearer
+}
+
+params:query {
+  limit: 20
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjgwNTk4NTI1LCJpYXQiOjE2ODA1MTIxMjV9.SSlAEwfCdwGpt-j405o_qBgBc2W-mhnv_9mcvVQyS5E
+}

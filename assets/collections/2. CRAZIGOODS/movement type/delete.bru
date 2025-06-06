@@ -1,0 +1,15 @@
+meta {
+  name: delete
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{crg_host}}/movement-types/eo25qnpJ9P6A
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

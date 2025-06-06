@@ -1,0 +1,25 @@
+meta {
+  name: New Request
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{host}}/vendor-variants/:id
+  body: json
+  auth: bearer
+}
+
+params:path {
+  id: 21DjAE7r5hNZACnQa
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "supplierMaterialId" : "3zRzVfNkvpnD6E"
+  }
+}

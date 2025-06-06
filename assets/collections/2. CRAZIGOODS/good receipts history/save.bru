@@ -1,0 +1,28 @@
+meta {
+  name: save
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/good-receipts-histories
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "supplierMaterialId": "xcas",
+      "deliveryNoteId" : "xxx",
+      "materials": [
+          {
+              "variantInventoryId" : "xxx",
+              "quantity" : 10
+          }
+      ]
+  }
+}

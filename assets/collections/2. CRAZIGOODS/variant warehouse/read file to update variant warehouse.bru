@@ -1,0 +1,19 @@
+meta {
+  name: read file to update variant warehouse
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{host}}/variant-warehouses/read-file-to-update-variant-warehouse
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTAxMDgwODIsImlhdCI6MTY5MDAyMTY4Mn0.y713Q_W5IZVigsR5qf-GvTlMB4IRZB0Qq2hWycbqY00
+}
+
+body:multipart-form {
+  file: @file(/Users/dat/Desktop/upload file to update variant warehouse sub material.xlsx)
+}

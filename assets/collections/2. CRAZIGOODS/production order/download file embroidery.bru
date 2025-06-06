@@ -1,0 +1,24 @@
+meta {
+  name: download file embroidery
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{host}}/production-orders/download
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjg1MTUzODc2LCJpYXQiOjE2ODUwNjc0NzZ9.6LptRpifrVOWqcGndv7jLop0bEqmpGUdNoSArTwRm0A
+}
+
+body:json {
+  {
+      "placementEmbroidery": "Neck",
+      "poId": "3stYCRhYLLCc8p",
+      "itemIds": "",
+      "type": ""
+  }
+}

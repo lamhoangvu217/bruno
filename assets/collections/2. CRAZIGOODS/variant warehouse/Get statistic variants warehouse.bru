@@ -1,0 +1,32 @@
+meta {
+  name: Get statistic variants warehouse
+  type: http
+  seq: 14
+}
+
+get {
+  url: http://localhost:8082/variant-warehouses/ESpLZujt2Ast2Rn
+  body: none
+  auth: bearer
+}
+
+headers {
+  Accept: application/json, text/plain, */*
+  Accept-Language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE3NDQ2MjA0NDIsImlhdCI6MTc0NDU5MTY0Mn0.5m-qB7tPePHVlJBO4w8_PJS8mXr6EZ0mhYsEo8Z8HHI
+  Connection: keep-alive
+  DNT: 1
+  Origin: http://localhost:5173
+  Referer: http://localhost:5173/
+  Sec-Fetch-Dest: empty
+  Sec-Fetch-Mode: cors
+  Sec-Fetch-Site: same-site
+  User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+  sec-ch-ua: "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+  sec-ch-ua-mobile: ?0
+  sec-ch-ua-platform: "macOS"
+}
+
+auth:bearer {
+  token: {{token}}
+}

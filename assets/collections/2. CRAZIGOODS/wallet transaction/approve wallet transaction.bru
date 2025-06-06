@@ -1,0 +1,15 @@
+meta {
+  name: approve wallet transaction
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{host}}/wallet-transactions/3zPnXyeiUmssge/approve
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwZjF2V1lZREc1dkxlIiwiZW1haWwiOiJkYXRudDAzQGdvZGdyb3VwLmNvIiwicm9sZSI6IkZJTkFOQ0UiLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc3NTQ1NzA3LCJpYXQiOjE2Nzc0NTkzMDd9.hh1h-gGndHN-QbZYiA_xmJFlq5wqNQn-q0vmG377lRA
+}

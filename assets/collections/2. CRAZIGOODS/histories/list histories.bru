@@ -1,0 +1,21 @@
+meta {
+  name: list histories
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/task-queue-history?limit=5&cursor=4DRmrpTZCYGvCY
+  body: none
+  auth: bearer
+}
+
+params:query {
+  limit: 5
+  cursor: 4DRmrpTZCYGvCY
+  ~page: 1
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2NzU1OTQzNTUsImlhdCI6MTY3NTUwNzk1NX0.sm1-vFE2ayU7XG-P9pB64H4ftwvqIkxZBvC8XWD3vT0
+}

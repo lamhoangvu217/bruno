@@ -1,0 +1,28 @@
+meta {
+  name: save
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/delivery-notes
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTYyNTYwNTcsImlhdCI6MTY5NjE2OTY1N30.74IrzpgspvKEtPXAk33udnvUtDLP32cIwA4X2FBOLW0
+}
+
+body:json {
+  {
+      "supplierMaterialId": "",
+      "deliveredAt": "",
+      "materials": [
+          {
+              "variantInventoryId": "",
+              "quantity": 12
+          }
+      ]
+  }
+}

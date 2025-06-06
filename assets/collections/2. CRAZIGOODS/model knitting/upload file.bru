@@ -1,0 +1,19 @@
+meta {
+  name: upload file
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{crg_host}}/model-knittings/upload
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:multipart-form {
+  file: @file(/Users/hong/Desktop/BOM Knitting Mẫu.xlsx)
+}

@@ -1,0 +1,34 @@
+meta {
+  name: create user
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/users/sync-sql
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjYzYjc2Y2I3MDA2ZDY4YjEyMjU5YmM0YSIsImVtYWlsIjoiZGF0bnQwMUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiJ9LCJleHAiOjE2NzMwNTE3MjcsImlhdCI6MTY3Mjk2NTMyN30.ch3Zzp01fYOWt_XfvHY71I9H5h9lW3BKoixfo0M7ik0
+}
+
+body:json {
+  {
+      "role" : {
+          "name": "PRODUCTION_STAFF"
+      },
+      "sellerCheck": false,
+      "supCode": "",
+      "level": {
+          "level" : 1
+      },
+      "code": "",
+      "email" : "datnt11@godgroup.co",
+      "firstName": "Nguyễn Văn Dũng",
+      "lastName" : "",
+      "listAccountStore": [],
+      "password": "Godgroup@2022"
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: detail
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{crg_host}}/knitting-types/:id
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: 
+}
+
+auth:bearer {
+  token: {{token}}
+}

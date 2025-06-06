@@ -1,0 +1,22 @@
+meta {
+  name: sync missing
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{host}}/shipment-histories/sync-missing?from=2024-06-29T17:00:00Z&to=2024-11-30T16:59:59Z
+  body: none
+  auth: bearer
+}
+
+params:query {
+  from: 2024-06-29T17:00:00Z
+  to: 2024-11-30T16:59:59Z
+  ~limit: 100
+  ~search: j9ovqgzZK-1-1-1
+}
+
+auth:bearer {
+  token: {{token}}
+}

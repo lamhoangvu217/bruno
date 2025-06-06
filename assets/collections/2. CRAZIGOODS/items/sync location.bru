@@ -1,0 +1,19 @@
+meta {
+  name: sync location
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{host}}/items/sync-location?limit=100
+  body: none
+  auth: bearer
+}
+
+params:query {
+  limit: 100
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjg1Njk2NjE1LCJpYXQiOjE2ODU2MTAyMTV9.MO_d4dzo6TzdoMtfAwKY2cMG_DI3yUi-mobeZFJIcQU
+}

@@ -1,0 +1,22 @@
+meta {
+  name: create user factory
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{crg_host}}/user-factories
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "factoryId": "eo1rhPtsTSrC",
+      "userId": "3pbKADTcTnjJ2x"
+  }
+}

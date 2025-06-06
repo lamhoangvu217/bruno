@@ -1,0 +1,37 @@
+meta {
+  name: update knitting model
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{crg_host}}/model-knittings/3pdXwv4TgKGQvc
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "name": "TS01-Linking-HONG-TEST009-Update",
+      "description": "TS01-Linking-HONG-TEST009",
+      "variantInventoryIds": [
+          {
+              "id": "eo1tsstMhGdE",
+              "variantInventoryId": "EhCRXGi9H4ixrZ8",
+              "quantity": 20,
+              "unit": "PCS"
+          },
+          {
+              "id": "gHpok7mLcasQ",
+              "quantity": 25,
+              "variantInventoryId": "vqYpqaTyBPubhkWv",
+              "unit": "PCS",
+              "isQc": true
+          }
+      ]
+  }
+}

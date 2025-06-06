@@ -1,0 +1,31 @@
+meta {
+  name: create product operation
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{crg_host}}/product-operations
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "productId": "DhGuEp9WypETuEv",
+      "groupOperations": [
+          {
+              "operationId": "eo1tsstMhGdE",
+              "stepOrder": 1
+          },
+          {
+              "operationId": "gHpok7mLcasQ",
+              "stepOrder": 2
+          }
+      ]
+  }
+}

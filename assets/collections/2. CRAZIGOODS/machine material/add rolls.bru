@@ -1,0 +1,26 @@
+meta {
+  name: add rolls
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/machine-materials/add-yarn-rolls
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "machineId": "3pZqMMnXdwdAQz",
+      "knittingHead": 1,
+      "changeYarnColorReq": {
+          "quantity": 1,
+          "variantInventoryId": "23SRsNGQUR6r4GSnU"
+      }
+  }
+}

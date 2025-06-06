@@ -1,0 +1,30 @@
+meta {
+  name: save
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/line-ship-usps-prices
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE3MDg1NzIzOTAsImlhdCI6MTcwODQ4NTk5MH0.EyA1iXl15VjAIFl3tTl__4ArEkUjAPGN8X_dsxvGBso
+}
+
+body:json {
+  {
+      "weightGram": 4182,
+      "lineShipVendorId": "gHVQQ73ySNok",
+      "zone1": 7.37,
+      "zone2": 7.37,
+      "zone3": 7.99,
+      "zone4": 9.01,
+      "zone5": 10.81,
+      "zone6": 11.7,
+      "zone7": 13.51,
+      "zone8": 13.78
+  }
+}

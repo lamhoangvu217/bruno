@@ -1,0 +1,56 @@
+meta {
+  name: create design item
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{crg_host}}/designs/3pZqMFF5mkCfXk/items
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  [
+      {
+          "size":"s",
+          "modelTemplateId":"3sprGZbj6N4vUz",
+          "operationId":"",
+          "densityFileDefault": "linkfile111111",
+          "knittingFile": "linkfile22222",
+          "densityFile": "linkfile333333",
+          "quantification": [
+              {
+                  "productInventoryId":"FC27FeaDixZRb5i", // Sợi
+                  "estimate":1,
+                  "actual":0,
+                  "color": "black",
+                  "colorOrder": 0,
+                  "yarnRollsOrder":[1,2,3,4],
+                  "knittingHead":2
+              },
+              {
+                 "productInventoryId":"FC27FeaDixZRb5i", // Sợi
+                  "estimate":1,
+                  "actual":0,
+                  "color": "",
+                  "colorOrder": 1,
+                  "typeColor": "auto",
+                  "yarnRollsOrder":[1,2,3,4]
+              },
+              {
+                  "productInventoryId":"FC27FeaDixZRb5i", // Sợi
+                  "estimate":1,
+                  "actual":0,
+                  "color": "",
+                  "colorOrder": 1,
+                  "typeColor": "auto"
+              }
+          ]
+      }
+  ]
+}

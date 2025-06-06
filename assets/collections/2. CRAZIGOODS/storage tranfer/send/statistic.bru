@@ -1,0 +1,15 @@
+meta {
+  name: statistic
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{crg_host}}/storage-transfers/send/statistic
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

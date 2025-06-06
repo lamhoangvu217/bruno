@@ -1,0 +1,19 @@
+meta {
+  name: update dữ liệu kiểm kê
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{host}}/receipt-product-inventories/update-stock-inventory
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTM4MDU1NDIsImlhdCI6MTY5MzcxOTE0Mn0.E0BJdTE7CDKaToXy_9satjvtnrnObv4H1q8Lk47PuKA
+}
+
+body:multipart-form {
+  file: @file(/Users/dat/Desktop/stock 030902.xlsx)
+}

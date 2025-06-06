@@ -1,0 +1,34 @@
+meta {
+  name: save cost center
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/cost-centers/DStkarAmWnAf5Wt
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiZGF0bnRAZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc1OTA0Mzc3LCJpYXQiOjE2NzU4MTc5Nzd9.VPXFSiJIpDX6_CA5C3NF4w-oR0zHwijj_Jpwb5RGZD4
+}
+
+body:json {
+  [
+      {
+          "baseCostFirstItem": 1.33,
+          "baseCostPlusItem": 1.2,
+          "domesticShippingFee": 5.17,
+          "domesticAddItemShippingFee": 2,
+          "tierId": "e5CU6x2mtmnx"
+      },
+      {
+          "baseCostFirstItem": 1.83,
+          "baseCostPlusItem": 1.7,
+          "domesticShippingFee": 5.17,
+          "domesticAddItemShippingFee": 2,
+          "tierId": "gGzXdRgxPN14"
+      }
+  ]
+}

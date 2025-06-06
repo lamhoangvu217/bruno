@@ -1,0 +1,21 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{host}}/item-inventories/75M9CC9UgsevrGB6wsme9t
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "receiptProductInventoryId" : "K6AXmP7AdwGW98mK3GU"
+  }
+}

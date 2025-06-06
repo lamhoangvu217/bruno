@@ -1,0 +1,22 @@
+meta {
+  name: save
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/asin-config-layers
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjg0NzQyMjQxLCJpYXQiOjE2ODQ2NTU4NDF9.9aBI-4NDqBQDTHlGTTV_B9k1imK_LPhG1sIBAVTxlrY
+}
+
+body:json {
+  {
+      "listAsin" : "B0BVM8B1WY",
+      "groupName": "test 1"
+  }
+}

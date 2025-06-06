@@ -1,0 +1,15 @@
+meta {
+  name: update supplier
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{host}}/variant-inventory-models/update-supplier
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

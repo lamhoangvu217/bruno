@@ -1,0 +1,15 @@
+meta {
+  name: get by userid
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{crg_host}}/user-factories/3pbKADTcTnjJ2x
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

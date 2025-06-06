@@ -1,0 +1,30 @@
+meta {
+  name: return
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{host}}/dummies/return/:id
+  body: json
+  auth: bearer
+}
+
+params:path {
+  id: 
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  [
+      {
+          "dummyItemId" : "xxx"
+      },
+      {
+          "dummyItemId" : "yyy"
+      }
+  ]
+}

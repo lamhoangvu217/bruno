@@ -1,0 +1,21 @@
+meta {
+  name: sync item id
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{host}}/items/sync-item-id?from=2023-05-07T17:00:00Z&to=2023-05-08T16:00:00Z&search=MYcMIp55S
+  body: none
+  auth: bearer
+}
+
+params:query {
+  from: 2023-05-07T17:00:00Z
+  to: 2023-05-08T16:00:00Z
+  search: MYcMIp55S
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2ODQ4MDI0NDYsImlhdCI6MTY4NDcxNjA0Nn0.Ac2PUMLNay7TNmqtK2Vx6nVVnTQhB8OK4OdipWiPLdU
+}

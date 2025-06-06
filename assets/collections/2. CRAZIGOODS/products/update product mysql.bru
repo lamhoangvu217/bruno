@@ -1,0 +1,21 @@
+meta {
+  name: update product mysql
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{host}}/products/ECVPwEx3N8usXQN/mysql
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "isCheckStock": true
+  }
+}

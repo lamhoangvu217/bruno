@@ -1,0 +1,15 @@
+meta {
+  name: approve order
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/approve-orders
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjkwNjI5NTc1LCJpYXQiOjE2OTA1NDMxNzV9.8-ac-lt8wjg1O62vDbylylyT9FdguWc2RFNZVyBzC2k
+}

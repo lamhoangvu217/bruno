@@ -1,0 +1,52 @@
+meta {
+  name: create product mysql
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{host}}/products/mysql
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjgyODI3MjM5LCJpYXQiOjE2ODI3NDA4Mzl9.MtoqB3svLZudYDZPiRkA8OXhV4unPo6GJeZItHmt5Ds
+}
+
+body:json {
+  {
+      "productName": "Message Card",
+      "productCode": "MC",
+      "variants": [
+          {
+              "variantName": "",
+              "variantCode": "GGMC",
+              "stock": 100,
+              "status": "1",
+              "quantityBreaks": 1,
+              "costCenters": [
+                  {
+                      "baseCostFirstItem": 0.5,
+                      "baseCostPlusItem": 0,
+                      "domesticShippingFee": 0,
+                      "addItemShippingFee": 0,
+                      "tierId": "e5CU6x2mtmnx"
+                  },
+                  {
+                      "baseCostFirstItem": 0.5,
+                      "baseCostPlusItem": 0,
+                      "domesticShippingFee": 0,
+                      "addItemShippingFee": 0,
+                      "tierId": "gGzXdRgxPN14"
+                  }
+              ]
+          }
+      ],
+      "calculateByQuantityBreaks": false,
+      "status": "1",
+      "isPublic": true,
+      "typeProduct": "e5CcusGtUWDa",
+      "productKnittingMaterialId":""
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: download invoice
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/order-wallet-transactions/download-invoice?all=true
+  body: none
+  auth: bearer
+}
+
+params:query {
+  all: true
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoieG9uZ3hhbzE3MTFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwidGllcklkIjoiIn0sImV4cCI6MTY3ODUyMjIyMiwiaWF0IjoxNjc4NDM1ODIyfQ.vbf2MPbXiIyntRNOvrte7znDFjsL9kFx_xBjmwjKl-Q
+}

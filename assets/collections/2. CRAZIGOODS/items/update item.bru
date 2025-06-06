@@ -1,0 +1,25 @@
+meta {
+  name: update item
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{host}}/items/2ThQ4KzhfZxRnPqQyTEsU
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      // "vendorId": "3mKb6PeZ7gYgvn",
+      // "typeProductId": "EC9kns4wB3X76zA",
+      // "typeProductParentId": "3w6ZfRvKdgCq8v"
+      "itemStatus": "pre_production"
+      // "productionOrderId" : ""
+  }
+}

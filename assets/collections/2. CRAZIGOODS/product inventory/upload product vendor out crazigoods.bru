@@ -1,0 +1,19 @@
+meta {
+  name: upload product vendor out crazigoods
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{host}}/product-inventory/upload-vendor-out-crazigoods
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjkwOTk1ODUyLCJpYXQiOjE2OTA5MDk0NTJ9.duuX7slHAk1qUK2FkKkySR1jIMf9yjcEb9xHndLGjgQ
+}
+
+body:multipart-form {
+  file: @file()
+}

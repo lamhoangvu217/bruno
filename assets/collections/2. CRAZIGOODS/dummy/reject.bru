@@ -1,0 +1,19 @@
+meta {
+  name: reject
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{host}}/dummies/reject/:id
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: 
+}
+
+auth:bearer {
+  token: {{token}}
+}

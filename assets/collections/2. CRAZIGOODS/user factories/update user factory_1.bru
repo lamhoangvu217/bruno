@@ -1,0 +1,22 @@
+meta {
+  name: update user factory_1
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{crg_host}}/user-factories
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "factoryId": "gHpmZdt7fQkC",
+      "userId": "3pbKADTcTnjJ2x"
+  }
+}

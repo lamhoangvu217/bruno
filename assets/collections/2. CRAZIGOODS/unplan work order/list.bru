@@ -1,0 +1,20 @@
+meta {
+  name: list
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{crg_host}}/unplan-work-orders?page&limit
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: null
+  limit: null
+}
+
+auth:bearer {
+  token: {{token}}
+}

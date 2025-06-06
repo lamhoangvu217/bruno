@@ -1,0 +1,21 @@
+meta {
+  name: list
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/delivery-orders?search&from&to
+  body: none
+  auth: bearer
+}
+
+params:query {
+  search: null
+  from: null
+  to: null
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjg3NTA0MTM4LCJpYXQiOjE2ODc0MTc3Mzh9.2wudOHDsWfKvtWUtHbmt_c4x1yplfwZZZHWLbeRiD8A
+}

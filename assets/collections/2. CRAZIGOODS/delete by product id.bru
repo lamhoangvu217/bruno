@@ -1,0 +1,15 @@
+meta {
+  name: delete by product id
+  type: http
+  seq: 135
+}
+
+delete {
+  url: {{host}}/products/DhcQGgX3UbaHeo4/mysql
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

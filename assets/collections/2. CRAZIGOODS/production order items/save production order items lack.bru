@@ -1,0 +1,19 @@
+meta {
+  name: save production order items lack
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{host}}/production-orders/:production-order-id/lack
+  body: none
+  auth: bearer
+}
+
+params:path {
+  production-order-id: LvrugD1FRPWSd9tV3g6
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,28 @@
+meta {
+  name: update production order
+  type: http
+  seq: 21
+}
+
+put {
+  url: {{host}}/production-orders/2Nq4fmTy1MA2WjwbGNmJx
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      // "totalItemsCompleted":1,
+      // "totalItems":0 ,
+      // "quantity":0,
+      // "totalItemsActive":0,
+      // "poStatus": "in_progress"
+      "poStatus": "pending"
+      // "typeProductId": "DhcQGr774FZqvpW"
+      // "isHasAsin": true
+  }
+}

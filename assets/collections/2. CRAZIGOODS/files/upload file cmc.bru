@@ -1,0 +1,20 @@
+meta {
+  name: upload file cmc
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{host}}/files/upload-cmc
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:multipart-form {
+  file: @file(/Users/dat/Desktop/Screen Shot 2024-07-15 at 2.14.51 PM.png)
+  path: https://god-fulfillment.s3.hn-1.cloud.cmctelecom.vn/god-fullment/items/abc.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=OBRK489PB5WHDY2NXV1Y%2F20240726%2Fhn-1%2Fs3%2Faws4_request&X-Amz-Date=20240726T030334Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&x-id=PutObject&X-Amz-Signature=a87845d8404f094f8283470e71fc0a06c7dd3fd527b9b353659fcf1a048f34fe
+}

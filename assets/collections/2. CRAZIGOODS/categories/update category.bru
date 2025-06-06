@@ -1,0 +1,22 @@
+meta {
+  name: update category
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{host}}/categories/63631b868772199805fef457
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njc1MjU1NTAsImlhdCI6MTY2NzQzOTE1MCwidXNlcklEIjoiT2JqZWN0SUQoXCI2MzYxM2ZkOTIxMzNhOWEyZDMzYzYxNTZcIikiLCJlbWFpbCI6ImRhdG50QGdvZGdyb3VwLmNvIiwicm9sZSI6IkFETUlOIn0.dQ-jn7HxDKg63ppE2n3iMUu2EQUuXmzC-oVgRAin3kE
+}
+
+body:json {
+  {
+      "catName": "New Products 2",
+      "description": "description"
+  }
+}

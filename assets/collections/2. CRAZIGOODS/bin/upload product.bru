@@ -1,0 +1,20 @@
+meta {
+  name: upload product
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/product-inventory/upload
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTI0OTcxNDQsImlhdCI6MTY5MjQxMDc0NH0.-Kk9oJ3wZLxf9tG_THQvk7N-9S8FEFkpf7BP8K8YDxk
+}
+
+body:multipart-form {
+  file: @file(/Users/dat/Desktop/Upload Lego.xlsx)
+  receiptImport: DT1DdQ7bUh5oXSY
+}

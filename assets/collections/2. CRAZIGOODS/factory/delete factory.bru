@@ -1,0 +1,15 @@
+meta {
+  name: delete factory
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{crg_host}}/factories/eo1rgPTD9Aax
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

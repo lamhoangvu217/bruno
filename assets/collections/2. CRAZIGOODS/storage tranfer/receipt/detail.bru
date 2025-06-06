@@ -1,0 +1,19 @@
+meta {
+  name: detail
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{crg_host}}/storage-transfers/receipt/:id/
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: iVnRBBHSw42L
+}
+
+auth:bearer {
+  token: {{token}}
+}

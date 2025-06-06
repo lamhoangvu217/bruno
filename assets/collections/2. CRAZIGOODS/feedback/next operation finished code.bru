@@ -1,0 +1,19 @@
+meta {
+  name: next operation finished code
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{crg_host}}/feedbacks/:id/finished-code-next-operation
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: eo25sH1hEBB4
+}
+
+auth:bearer {
+  token: {{token}}
+}

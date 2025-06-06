@@ -1,0 +1,15 @@
+meta {
+  name: balance user
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{host}}/users/balance
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNzckxFcll4ZG9NZXJrIiwiZW1haWwiOiJ0ZXN0QGdvZGdyb3VwLmNvIiwicm9sZSI6IlVTRVIiLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc4NTAxODM1LCJpYXQiOjE2Nzg0MTU0MzV9.vs4bo8mzdGQtQd1kjA8Ioz2EeDaXKGwuWzh4Dr3ir24
+}

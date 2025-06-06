@@ -1,0 +1,21 @@
+meta {
+  name: update cost center
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{host}}/cost-centers/3zPnXybk5yivtC/e5CU6x2mtmnx
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjgxNTQyNDQ3LCJpYXQiOjE2ODE0NTYwNDd9.4c8r2xiWaA95sxbg3jUaaKpHs6EhVA6gxykD2l0hYHs
+}
+
+body:json {
+  {
+      "baseCostPlusItem": 0
+  }
+}

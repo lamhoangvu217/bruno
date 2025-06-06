@@ -1,0 +1,27 @@
+meta {
+  name: list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{crg_host}}/change-variant-inventory-histories?From&To&Search
+  body: json
+  auth: bearer
+}
+
+params:query {
+  From: null
+  To: null
+  Search: null
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      
+  }
+}

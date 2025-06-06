@@ -1,0 +1,15 @@
+meta {
+  name: find variant by product code
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/variants/AO-KNITTING/AO-KNITTING-W
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

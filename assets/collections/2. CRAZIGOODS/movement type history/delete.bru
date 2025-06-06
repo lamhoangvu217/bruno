@@ -1,0 +1,21 @@
+meta {
+  name: delete
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{crg_host}}/movement-type-histories/eo25tmD6JecQ
+  body: text
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:text {
+  {
+      "warehouseId" : "e5N8cUwuZTZE",
+  }
+}

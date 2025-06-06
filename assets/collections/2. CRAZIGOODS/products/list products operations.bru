@@ -1,0 +1,20 @@
+meta {
+  name: list products operations
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{crg_host}}/products/operations?search=Car Ornament
+  body: none
+  auth: bearer
+}
+
+params:query {
+  search: Car Ornament
+  ~cursor: gGzTBURqhajG
+}
+
+auth:bearer {
+  token: {{token}}
+}

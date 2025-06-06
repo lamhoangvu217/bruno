@@ -1,0 +1,22 @@
+meta {
+  name: update
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{crg_host}}/product-operations/eo1w4MmaeSkS
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "productId": "vr3vjppEkwY5XUr2",
+      "operationId": "eo1tsstMhGdE"
+  }
+}

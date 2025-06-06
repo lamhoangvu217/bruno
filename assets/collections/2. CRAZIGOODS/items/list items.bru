@@ -1,0 +1,19 @@
+meta {
+  name: list items
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{host}}/items?itemStatus=pending
+  body: none
+  auth: bearer
+}
+
+params:query {
+  itemStatus: pending
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjgyOTE0ODA1LCJpYXQiOjE2ODI4Mjg0MDV9.pXD2217ESDXNc6SzkrtAB5gvHYe_GTzcc2rkOgjC1Tk
+}

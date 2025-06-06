@@ -1,0 +1,19 @@
+meta {
+  name: suggest machines
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{host}}/machines/suggest/:work-order-id
+  body: none
+  auth: bearer
+}
+
+params:path {
+  work-order-id: 3mQ1gBtrgagxUJ
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,21 @@
+meta {
+  name: pay order
+  type: http
+  seq: 28
+}
+
+post {
+  url: {{host}}/orders/pay-order
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiZGF0bnRAZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc3NTE0Njk3LCJpYXQiOjE2Nzc0MjgyOTd9.CRlfsYmOK3uOqnKl9PnJgLbasHMLbS9jsmidaWzuHDU
+}
+
+body:json {
+  {
+      "orderIds": ["vrJJzPVvz271ue2k"]
+  }
+}

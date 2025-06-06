@@ -1,0 +1,15 @@
+meta {
+  name: create
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/machine-materials
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

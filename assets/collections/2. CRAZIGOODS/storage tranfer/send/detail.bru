@@ -1,0 +1,19 @@
+meta {
+  name: detail
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{crg_host}}/storage-transfers/send/:id
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: gHq2x1mV2CWn
+}
+
+auth:bearer {
+  token: {{token}}
+}

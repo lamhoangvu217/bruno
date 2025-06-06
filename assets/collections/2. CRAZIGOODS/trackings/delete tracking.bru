@@ -1,0 +1,15 @@
+meta {
+  name: delete tracking
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{host}}/trackings/2Nse1ks9reSZuCrobg1GU
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

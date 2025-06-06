@@ -1,0 +1,21 @@
+meta {
+  name: sync info ibc
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/line-ship-order-shipment/sync-info-ibc
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "shipmentId": "DhGxwuxcNJjHDqc"
+  }
+}

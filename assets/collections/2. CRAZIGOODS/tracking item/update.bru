@@ -1,0 +1,21 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{host}}/tracking-items/2Wy72UJwx8s5na4FMGU8z
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE3MDE5OTU4MjMsImlhdCI6MTcwMTkwOTQyM30.RSXvpnfThKfb5RYK9pvQa7Vn_QJIMKHr7FreLCwwQ48
+}
+
+body:json {
+  {
+      "trackingNumber": "9274890343134810354949"
+  }
+}

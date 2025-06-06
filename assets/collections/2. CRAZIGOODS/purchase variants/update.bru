@@ -1,0 +1,21 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{host}}/purchase-variants/update/21DUSUXJ1xoeYKUek
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTY3ODYxODUsImlhdCI6MTY5NjY5OTc4NX0.ACliVEU5B5BbvySU9Kml5EaTt-AMYRmkIinKxwQP4Gw
+}
+
+body:json {
+  {
+      "purchaseVariantStatus": "open"
+  }
+}

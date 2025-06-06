@@ -1,0 +1,21 @@
+meta {
+  name: delete model
+  type: http
+  seq: 10
+}
+
+delete {
+  url: {{host}}/models/delete/models?from=2024-08-12T00:00:00Z&to=2024-08-12T23:59:59Z
+  body: none
+  auth: bearer
+}
+
+params:query {
+  from: 2024-08-12T00:00:00Z
+  to: 2024-08-12T23:59:59Z
+  ~search: Custom Shape Patches Printed with Border Embroidered
+}
+
+auth:bearer {
+  token: {{token}}
+}

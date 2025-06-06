@@ -1,0 +1,19 @@
+meta {
+  name: return ship date
+  type: http
+  seq: 53
+}
+
+post {
+  url: {{host}}/orders/return-ship-date
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:multipart-form {
+  file: @file(/Users/dat/Documents/Zalo Received Files/gs_ffname_order_nov.xlsx)
+}

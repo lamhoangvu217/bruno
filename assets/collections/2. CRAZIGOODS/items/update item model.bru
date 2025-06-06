@@ -1,0 +1,22 @@
+meta {
+  name: update item model
+  type: http
+  seq: 20
+}
+
+post {
+  url: {{host}}/items/update-item-model?page=1&limit=20&itemStatus=in_production&search=S001-BLK00S
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 20
+  itemStatus: in_production
+  search: S001-BLK00S
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2OTExMDU5NTcsImlhdCI6MTY5MTAxOTU1N30.jLL5R72LajC3UgaGlh3WF1eZrQfX0BsLcmE0rpLUuNc
+}

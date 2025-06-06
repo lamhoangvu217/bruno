@@ -1,0 +1,25 @@
+meta {
+  name: send
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{crg_host}}/feedbacks/send-variant/:id
+  body: json
+  auth: bearer
+}
+
+params:path {
+  id: 
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "quantity":0
+  }
+}

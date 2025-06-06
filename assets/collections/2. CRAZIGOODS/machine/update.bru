@@ -1,0 +1,26 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{host}}/machines/3mJ7HVnzJKnRnY
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "modelName": "200000",
+    "importDate": "2024-03-27T10:00:00Z",
+    "machineNumber": "MCH-102",
+    "machineType": "normal",             // 7 hoặc 14 (số kim)
+    "knittingHeadCount": 10 // 8 mỏ → dệt 8 áo/lần
+  }
+  
+}

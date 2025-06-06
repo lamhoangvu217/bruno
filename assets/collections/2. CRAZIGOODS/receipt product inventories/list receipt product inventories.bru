@@ -1,0 +1,20 @@
+meta {
+  name: list receipt product inventories
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/receipt-product-inventories?variantInventoryId=DCxYWLJrXjS1eYi&warehouse=G1E
+  body: none
+  auth: bearer
+}
+
+params:query {
+  variantInventoryId: DCxYWLJrXjS1eYi
+  warehouse: G1E
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2ODkyNTU4NTcsImlhdCI6MTY4OTE2OTQ1N30.CdQ30tTtcnqqlYljkO3Ek7BSvfvrKwrZwbvo4Hi74yE
+}

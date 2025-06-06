@@ -1,0 +1,15 @@
+meta {
+  name: approve Copy
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8082/return-materials/wwmxm8KbMvHvQXbY/approve-buffer
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

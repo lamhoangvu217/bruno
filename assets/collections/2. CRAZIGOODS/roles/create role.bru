@@ -1,0 +1,21 @@
+meta {
+  name: create role
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/roles
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE3MDA4ODE1MTEsImlhdCI6MTcwMDc5NTExMX0.sEti4-iwGyKj80mZ48NGS4liGC1WeZrBxddIXfMhOHg
+}
+
+body:json {
+  {
+      "name": "SUPPLIER_MATERIAL"
+  }
+}

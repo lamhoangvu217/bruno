@@ -1,0 +1,19 @@
+meta {
+  name: update price
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/vendor-variants/update-price
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjg5Nzc5OTE2LCJpYXQiOjE2ODk2OTM1MTZ9.64EbXX5pEYiva5swwyHi5xoEwKrSxS8rV3cVffe8VcI
+}
+
+body:multipart-form {
+  file: @file(/Users/dat/Desktop/update price.xlsx)
+}

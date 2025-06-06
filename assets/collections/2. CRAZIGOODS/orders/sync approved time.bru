@@ -1,0 +1,22 @@
+meta {
+  name: sync approved time
+  type: http
+  seq: 41
+}
+
+post {
+  url: {{host}}/orders/sync-approved-time?page=1&limit=100&from=2023-08-25T17:00:00Z&to=2023-08-26T16:59:59Z
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 100
+  from: 2023-08-25T17:00:00Z
+  to: 2023-08-26T16:59:59Z
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjkyNDY3MDU3LCJpYXQiOjE2OTIzODA2NTd9.M8yRWCSaG2wTBcABx2FGrWTOiEB_0DMT2YDw1_GjiVw
+}

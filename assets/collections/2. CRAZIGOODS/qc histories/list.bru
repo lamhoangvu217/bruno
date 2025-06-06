@@ -1,0 +1,27 @@
+meta {
+  name: list
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{host}}/qc-histories?factoryId=iVn9kqLf2eTx&limit=20&cursor=&search=&from=&to=&status=&vendorId=&isActive=1
+  body: none
+  auth: bearer
+}
+
+params:query {
+  factoryId: iVn9kqLf2eTx
+  limit: 20
+  cursor: 
+  search: 
+  from: 
+  to: 
+  status: 
+  vendorId: 
+  isActive: 1
+}
+
+auth:bearer {
+  token: {{token}}
+}

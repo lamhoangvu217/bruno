@@ -1,0 +1,34 @@
+meta {
+  name: webhook tracking pb
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{host}}/line-ship-trackings/webhook-sync-tracking-pitney-bowes
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE3MTM5NTA4NjgsImlhdCI6MTcxMzkyMjA2OH0.YPBXrWju3R-xlP7CTaf6JAck6p98xyStY0Qh_DqLHT8
+}
+
+body:json {
+  {
+      "trackingEvents": [
+          {
+              "trackingNumber": "aaaa",
+              "referenceNumber": "aaaa",
+              "smartLabelBarcode": "aaaa",
+              "carrier": "aaaa",
+              "packageStatus": "aaaa",
+              "eventDescription": "aaaa",
+              "eventDate": "aaaa",
+              "eventTime": "aaaa",
+              "eventCode": "aaaa",
+              "standardizedEventCode": "aaaa"
+          }
+      ]
+  }
+}

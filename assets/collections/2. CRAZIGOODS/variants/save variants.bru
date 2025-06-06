@@ -1,0 +1,31 @@
+meta {
+  name: save variants
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/variants/3pf1vULa2NmdGk
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjYzNjYwMjdkN2Y4Zjc3NjU4YzM3ZGEwYSIsImVtYWlsIjoiaHV5cHFAZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4ifSwiZXhwIjoxNjcyNDc4MDc1LCJpYXQiOjE2NzIzOTE2NzV9.iVlAcKU_6YQRuR6IURLopux_-eY8bxQLxwDL4Xj_veo
+}
+
+body:json {
+  [
+      {
+          "variantName": "Size 10\"",
+          "variantCode": "GGCMS10",
+          "stock": 100,
+          "status": "1",
+          "regularPrice": 12.5,
+          "salePrice": 12.5,
+          "domesticShippingFee": 10.4,
+          "addItemShippingFee": 5,
+          "quantityBreaks": 1
+      }
+  ]
+}

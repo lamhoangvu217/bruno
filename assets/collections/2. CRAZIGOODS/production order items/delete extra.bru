@@ -1,0 +1,19 @@
+meta {
+  name: delete extra
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/production-order-items/:id/extra
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: LvrvnwEvPwGXczs8ryA
+}
+
+auth:bearer {
+  token: {{token}}
+}

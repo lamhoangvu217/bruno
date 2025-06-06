@@ -1,0 +1,21 @@
+meta {
+  name: fulfill manual order vendor
+  type: http
+  seq: 36
+}
+
+post {
+  url: {{host}}/orders/fulfillment/manual
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjgxNTI3MTQwLCJpYXQiOjE2ODE0NDA3NDB9.ZD4f-4bDQFTPBlDlcllUQMIpgLSnYgZNsez8muEtaSk
+}
+
+body:json {
+  {
+      "orderIds": ["vqYt7JN8YRXadysG"]
+  }
+}

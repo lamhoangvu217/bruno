@@ -1,0 +1,24 @@
+meta {
+  name: list embroidery management
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/embroidery-managements?productId=3pbKABFePC7xDe
+  body: none
+  auth: bearer
+}
+
+params:query {
+  productId: 3pbKABFePC7xDe
+  ~designerId: gGzVNxrzFgmY
+  ~isDone: true
+  ~embroideryStatus: pending
+  ~producerId: gGzVNxrzFgmY
+  ~search: test
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjgxOTUxMjQyLCJpYXQiOjE2ODE4NjQ4NDJ9.XVm5RoKZpwUA2kf4pYSkPgGa8BCJRyVvtWMbuJOOAKY
+}

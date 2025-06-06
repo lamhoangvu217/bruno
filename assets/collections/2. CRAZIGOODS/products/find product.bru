@@ -1,0 +1,15 @@
+meta {
+  name: find product
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{host}}/products/ASOM/mysql
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImdHelZOeHJ6RmdtWSIsImVtYWlsIjoiZGF0bnRAZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc1NzMyNjI3LCJpYXQiOjE2NzU2NDYyMjd9.4hhZeNZSFScodWlPI38uL3LGaMevdCehCbgQ4252PfM
+}

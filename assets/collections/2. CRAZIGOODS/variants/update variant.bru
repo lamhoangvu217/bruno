@@ -1,0 +1,22 @@
+meta {
+  name: update variant
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{host}}/variants/LvXYk6JwXqQpVmzLfV2
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "option1" : "LED",
+      "option2": "6x6\""
+  }
+}

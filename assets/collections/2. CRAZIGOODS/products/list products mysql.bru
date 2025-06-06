@@ -1,0 +1,22 @@
+meta {
+  name: list products mysql
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{crg_host}}/products/mysql?page=1&limit=20&keyword=CTSP
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 20
+  keyword: CTSP
+  ~cursor: gGzTBURqhajG
+}
+
+auth:bearer {
+  token: {{token}}
+}

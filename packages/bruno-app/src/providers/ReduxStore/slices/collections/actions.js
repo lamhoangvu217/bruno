@@ -84,19 +84,22 @@ export const saveRequest = (itemUid, collectionUid, saveSilently) => (dispatch, 
     itemSchema
       .validate(itemToSave)
       .then(() => ipcRenderer.invoke('renderer:save-request', item.pathname, itemToSave))
-      .then(() => {
-        // Auto-commit to git after saving
-        return commitFileToGit(item.pathname)
-          .catch(err => {
-            console.error('Git commit error:', err);
-            // Don't fail the save operation if git commit fails
-            return Promise.resolve();
-          });
+      .then(async () => {
+        // After saving the request, commit it to git
+        try {
+          console.log('About to commit file to git:', item.pathname);
+          await commitFileToGit(item.pathname);
+        } catch (gitError) {
+          console.error('Error committing to git:', gitError);
+          // Don't fail the save operation if git commit fails
+        }
+        return Promise.resolve();
       })
-      .then(() => {
+      .then((res) => {
         if (!saveSilently) {
           toast.success('Request saved successfully');
         }
+        console.log("res", res);
       })
       .then(resolve)
       .catch((err) => {

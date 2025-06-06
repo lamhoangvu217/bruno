@@ -1,0 +1,25 @@
+meta {
+  name: update box scanout
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{host}}/box-scanouts/:box-id
+  body: json
+  auth: bearer
+}
+
+params:path {
+  box-id: vsHqn89VgtYv7qW6
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE3MDIzNDE1MzEsImlhdCI6MTcwMjI1NTEzMX0.hBZS9T13ATH-a6QTTiPHPuHGNthHjO-6s3Rm31ISELw
+}
+
+body:json {
+  {
+      "name": "20231212GJ04"
+  }
+}

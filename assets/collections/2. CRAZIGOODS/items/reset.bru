@@ -1,0 +1,25 @@
+meta {
+  name: reset
+  type: http
+  seq: 24
+}
+
+post {
+  url: {{host}}/items/reset?page=9&limit=20&search=zrz3D237t-1-1-1
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 9
+  limit: 20
+  search: zrz3D237t-1-1-1
+  ~itemStatus: pending
+  ~typeProductParentId: gHA5WXMTi93W
+  ~vendorProductionId: 3mKb6PeZ7gYgvn
+  ~productIds: ECKZG5AeELkFVDE
+}
+
+auth:bearer {
+  token: {{token}}
+}

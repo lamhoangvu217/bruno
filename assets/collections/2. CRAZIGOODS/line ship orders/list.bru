@@ -1,0 +1,19 @@
+meta {
+  name: list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/line-ship-orders?isErrorShip=true
+  body: none
+  auth: bearer
+}
+
+params:query {
+  isErrorShip: true
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,19 @@
+meta {
+  name: detail box scanout
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{host}}/box-scanouts/:box-id
+  body: none
+  auth: bearer
+}
+
+params:path {
+  box-id: 
+}
+
+auth:bearer {
+  token: {{token}}
+}

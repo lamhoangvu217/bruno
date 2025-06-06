@@ -1,0 +1,22 @@
+meta {
+  name: update item pre production to pending
+  type: http
+  seq: 12
+}
+
+get {
+  url: {{host}}/items/update-item-to-pending?page=1&limit=10&itemStatus=pre_production&productIds=3pZ7CkvTaDuyDU
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 10
+  itemStatus: pre_production
+  productIds: 3pZ7CkvTaDuyDU
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2ODQ1NDcyODQsImlhdCI6MTY4NDQ2MDg4NH0.b_WHSYFOYhsSkCe4t0P4EbLJWkMYy2jNTjFhZ25fCgA
+}

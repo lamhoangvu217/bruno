@@ -1,0 +1,19 @@
+meta {
+  name: confirm receipt
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{crg_host}}/storage-transfers/receipt/:id/confirm
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: iVnRBBHSw42L
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,51 @@
+meta {
+  name: create order
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/orders
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "customerNote": "note",
+      "lineItems": [
+          {
+              "artworkBack": "",
+              "artworkFront": "https://api.podlovers.com/print-files/86210660-85b7-4659-a48d-e1e39049455c/production",
+              "itemSku": "GGESW2XL16NA",
+              "preset": "",
+              "unfulfillQuantity": 1,
+              "urlMockup": "https://m.media-amazon.com/images/I/91ydhPnmfrL.jpg",
+              "variantNote": "",
+              "variantTitle": "",
+              "productId": "ESW",
+              "asin": "B0CVQF54S1",
+              "customize": "[{\"name\":\"Custom Nickname\",\"value\":\"Mama\"},{\"name\":\"How many kids names you want us to embroider on sleeve\",\"value\":\"1-2 Kids Names\"},{\"name\":\"Custom Kids Names\",\"value\":\"Jacob, Brandon\"},{\"name\":\"Select Thread Color\",\"value\":\"White (9)\"},{\"name\":\"Select Product Type\",\"value\":\"Crewneck Sweatshirt (Best Selling)\"},{\"name\":\"Select Color\",\"value\":\"Military Green\"},{\"name\":\"Choose Icon on Sleeve\",\"value\":\"Icon 4\"},{\"name\":\"Select Size\",\"value\":\"2XL\"},{\"name\":\"Priority Production\",\"value\":\"No\"},{\"name\":\"Customization Url\",\"value\":\"https://zme-caps.amazon.com/t/W8eLo6snI8Z5/wEjLMIYVQdzcW0EJwKQFJfAAmp_sDGjUKf54yPuB2fc/23\"},{\"name\":\"Customer Photo\",\"value\":\"https://s3.hn-1.cloud.cmctelecom.vn/god-system-images/amazon-customization/d5712445-0207-37c3-19ae-638fe48a70e5.jpg\"},{\"name\":\"Print File\",\"value\":\"https://api.podlovers.com/print-files/86210660-85b7-4659-a48d-e1e39049455c/production\"},{\"name\":\"Back Side Print File\",\"value\":\"https://api.podlovers.com/print-files/86210660-85b7-4659-a48d-e1e39049455c/production\"}]"
+          }
+      ],
+      "orderId": "67",
+      "shippingAddress1": "12 Grape St",
+      "shippingAddress2": "",
+      "shippingCity": "Newmarket",
+      "shippingCountry": "US",
+      "shippingCountryCode": "",
+      "shippingEmail": "quanghuy@gmail.com",
+      "shippingName": "Nguyen Quang Huy",
+      "shippingPhone": "0123456789",
+      "shippingProvince": "",
+      "shippingProvinceCode": "",
+      "shippingState": "VT",
+      "shippingType": "Economy",
+      "shippingZip": "03857",
+      "orderDateGS": "2024-03-27 10:00:00 +"
+  }
+}

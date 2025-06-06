@@ -1,0 +1,27 @@
+meta {
+  name: list trackings mysql
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{host}}/trackings/list-tracking-mysql?page=1&limit=2&cursor=iUwum84kccaA
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 2
+  cursor: iUwum84kccaA
+  ~search: U7jQCF5q3
+  ~status: 
+  ~carrier: 
+  ~from: 2022-12-18
+  ~to: 2022-12-20
+  ~is_null_order_id: 
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6ImU1MzUzbjQzVUxBQSIsImVtYWlsIjoiYWRtaW5AZ29kZ3JvdXAuY28iLCJyb2xlIjoiQURNSU4iLCJ0aWVySWQiOiIifSwiZXhwIjoxNjc5MzgwNTQ4LCJpYXQiOjE2NzkyOTQxNDh9.jAbNRTbPlmEUIr4ZqhKlRVCYvuxMk10JLUTA58L9lOw
+}

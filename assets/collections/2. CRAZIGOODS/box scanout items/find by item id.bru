@@ -1,0 +1,15 @@
+meta {
+  name: find by item id
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{host}}/box-scanout-items/2QUGggizb6eEBu7BPKtr2
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

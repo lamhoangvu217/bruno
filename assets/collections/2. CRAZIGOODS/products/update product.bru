@@ -1,0 +1,36 @@
+meta {
+  name: update product
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{host}}/products/63660e34c585852fd70d0d88
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Njg5MDQ2OTIsImlhdCI6MTY2ODgxODI5MiwidXNlcklEIjoiNjM2MTNmZDkyMTMzYTlhMmQzM2M2MTU2IiwiZW1haWwiOiJkYXRudEBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiJ9.QpHNYkorotdSnL6apK5OmS6HdPNKY8ZNRApPxCzPRQ4
+}
+
+body:json {
+  {
+      "variants": [
+          {
+              "addItemShippingFee": 4.5,
+              "variantCode": "GGWS",
+              "regularPrice": 3.13,
+              "internationalAddItemShippingFee": 0,
+              "internationalShippingFee": 0,
+              "domesticShippingFee": 7.38,
+              "status": "1",
+              "variantName": "White\/S",
+              "quantityBreaks": 1,
+              "salePrice": 3.13,
+              "stock": 100
+          }
+      ],
+      "status": "1"
+  }
+}

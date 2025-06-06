@@ -1,0 +1,22 @@
+meta {
+  name: sync vat and ship
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{host}}/good-receipts-histories/sync-vat-and-ship-gr?from=2024-12-31T17:00:00Z&to=2025-04-08T16:59:59Z&page=1&limit=500
+  body: none
+  auth: bearer
+}
+
+params:query {
+  from: 2024-12-31T17:00:00Z
+  to: 2025-04-08T16:59:59Z
+  page: 1
+  limit: 500
+}
+
+auth:bearer {
+  token: {{token}}
+}

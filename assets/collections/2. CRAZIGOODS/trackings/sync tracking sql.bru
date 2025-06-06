@@ -1,0 +1,15 @@
+meta {
+  name: sync tracking sql
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{host}}/trackings/sync-tracking-sql
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

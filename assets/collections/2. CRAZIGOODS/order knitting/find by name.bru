@@ -1,0 +1,19 @@
+meta {
+  name: find by name
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{crg_host}}/orders-knitting/find-by-name?orderName=
+  body: none
+  auth: bearer
+}
+
+params:query {
+  orderName: 
+}
+
+auth:bearer {
+  token: {{token}}
+}

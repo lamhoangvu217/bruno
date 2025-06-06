@@ -1,0 +1,20 @@
+meta {
+  name: List model knittings
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{crg_host}}/model-knittings?search=TEST_1
+  body: json
+  auth: bearer
+}
+
+params:query {
+  search: TEST_1
+  ~modelKnittingId: iVnBzHiwRQyC
+}
+
+auth:bearer {
+  token: {{token}}
+}

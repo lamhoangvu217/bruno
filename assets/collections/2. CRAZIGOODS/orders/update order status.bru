@@ -1,0 +1,21 @@
+meta {
+  name: update order status
+  type: http
+  seq: 38
+}
+
+put {
+  url: {{host}}/orders/2QSp4VFQ52LjRw5oXiNFJ/status
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "orderStatus" : "fwd"
+  }
+}

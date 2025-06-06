@@ -1,0 +1,22 @@
+meta {
+  name: save model knitting - product
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{crg_host}}/model-knitting-products
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "modelKnittingId": "3pdXwv4TgKGQvc",
+      "productId": "vr3vjppEkwY5XUr2"
+  }
+}

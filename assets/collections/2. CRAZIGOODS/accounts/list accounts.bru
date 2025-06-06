@@ -1,0 +1,20 @@
+meta {
+  name: list accounts
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/accounts?type=shipping
+  body: none
+  auth: bearer
+}
+
+params:query {
+  type: shipping
+  ~vendorId: gGzVSwhU9s24
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjp7InVzZXJJRCI6IjNwYktBRFRjVG5qSjJ4IiwiZW1haWwiOiJodXlwcUBnb2Rncm91cC5jbyIsInJvbGUiOiJBRE1JTiIsInRpZXJJZCI6IiJ9LCJleHAiOjE2ODA3NTM4MzcsImlhdCI6MTY4MDY2NzQzN30.7lxdpQcFM8a1JusA7qFksDwvXeuhX8_1Eu00Ud02AcQ
+}
