@@ -1,11 +1,12 @@
 import React from 'react';
 import { uuid } from 'utils/common';
-import { IconFiles, IconRun, IconEye, IconSettings } from '@tabler/icons';
+import { IconFiles, IconRun, IconEye, IconSettings, IconRefresh } from '@tabler/icons';
 import EnvironmentSelector from 'components/Environments/EnvironmentSelector';
 import GlobalEnvironmentSelector from 'components/GlobalEnvironments/EnvironmentSelector';
 import { addTab } from 'providers/ReduxStore/slices/tabs';
 import { useDispatch } from 'react-redux';
 import ToolHint from 'components/ToolHint';
+import { toast } from 'react-hot-toast';
 import StyledWrapper from './StyledWrapper';
 import JsSandboxMode from 'components/SecuritySettings/JsSandboxMode';
 
@@ -42,6 +43,30 @@ const CollectionToolBar = ({ collection }) => {
     );
   };
 
+  const syncData = async () => {
+    const toastId = toast.loading('Syncing data from git...');
+    try {
+      const { ipcRenderer } = window;
+      if (!ipcRenderer) {
+        toast.error('IPC renderer not available');
+        return;
+      }
+      
+      const result = await ipcRenderer.invoke('renderer:git-pull');
+      
+      if (result && result.success) {
+        toast.success('Successfully synced data from git');
+      } else {
+        toast.error(`Failed to sync: ${result?.message || 'Unknown error'}`);
+      }
+    } catch (error) {
+      console.error('Error syncing data:', error);
+      toast.error(`Error syncing data: ${error.message}`);
+    } finally {
+      toast.dismiss(toastId);
+    }
+  };
+
   return (
     <StyledWrapper>
       <div className="flex items-center p-2">
@@ -70,6 +95,11 @@ const CollectionToolBar = ({ collection }) => {
           </span>
           <span>
             <GlobalEnvironmentSelector />
+          </span>
+          <span className="mr-3">
+            <ToolHint text="Sync Data" toolhintId="SyncDataToolhintId">
+              <IconRefresh className="cursor-pointer" size={18} strokeWidth={1.5} onClick={syncData} />
+            </ToolHint>
           </span>
           <EnvironmentSelector collection={collection} />
         </div>
